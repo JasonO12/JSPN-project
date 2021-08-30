@@ -1,5 +1,5 @@
 # import "packages" from flask
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 # create a Flask instance
 app = Flask(__name__)
@@ -30,6 +30,15 @@ def hawkers():
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
+
+
+@app.route('/greet', methods=['GET', 'POST'])
+def greet():
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:
+            return render_template("greet.html", nickname=name)
+    return render_template("greet.html", nickname="World")
 
 
 # runs the application on the development server
