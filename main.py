@@ -32,7 +32,7 @@ def stub():
     return render_template("stub.html")
 
 
-@app.route('/Soma', methods=['GET', 'POST'])
+@app.route('/soma', methods=['GET', 'POST'])
 def greet():
     if request.form:
         name = request.form.get("name")
@@ -40,7 +40,29 @@ def greet():
             return render_template("Soma.html", nickname=name)
     return render_template("Soma.html", nickname="World")
 
+@app.route('/nic', methods=['GET', 'POST'])
+def nic():
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:
+            return render_template("Nicolas.html", nickname=name)
+    return render_template("Nicolas.html", nickname="World")
 
+@app.route('/Paul', methods=['GET', 'POST'])
+def paul():
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:
+            return render_template("Paul.html", nickname=name)
+    return render_template("Paul.html", nickname="World")
+
+@app.route('/Jason', methods=['GET', 'POST'])
+def jason():
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:
+            return render_template("Jason.html", nickname=name)
+    return render_template("Jason.html", nickname="World")
 
 
 # runs the application on the development server
