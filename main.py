@@ -32,13 +32,15 @@ def stub():
     return render_template("stub.html")
 
 
-@app.route('/greet', methods=['GET', 'POST'])
+@app.route('/Soma', methods=['GET', 'POST'])
 def greet():
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:
-            return render_template("greet.html", nickname=name)
-    return render_template("greet.html", nickname="World")
+            return render_template("Soma.html", nickname=name)
+    return render_template("Soma.html", nickname="World")
+
+
 
 
 # runs the application on the development server
