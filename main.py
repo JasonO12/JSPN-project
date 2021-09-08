@@ -64,7 +64,6 @@ def jason():
             return render_template("Jason.html", nickname=name)
     return render_template("Jason.html", nickname="World")
 
-
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
