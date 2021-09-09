@@ -10,7 +10,6 @@
            use HTML Input Form in Frontend, ie toward top of Page
            send initial value and updated values to form via Python render_template -->
 <!-- Hack: use 8 as default -->
-{% set BITS = 8 %}
 {% set MAX = ((2 ** BITS) - 1) %}
 
 <!-- Hack: Set bulbs and pass as variables via Python render_template
@@ -118,6 +117,13 @@
 
 {% block body %}
     <h1 class="text-center">Binary Math with Conversions</h1>
+    <div class="col-12">
+        <form action="/Binary" id="binary" method="POST" >
+            <label for="Bits">Type a number!</label>
+            <input name="bits" id="bits">
+            <input type="submit" value="Calculate!">
+        </form>
+    </div>
     <div class="container">
         <div class="row justify-content-md-center">
 

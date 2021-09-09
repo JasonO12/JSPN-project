@@ -64,9 +64,10 @@ def jason():
             return render_template("Jason.html", nickname=name)
     return render_template("Jason.html", nickname="World")
 
-@app.route('/Binary/')
+@app.route('/Binary/', methods=['GET', 'POST'])
 def binary():
-    return render_template("Binary.html")
+    return render_template("Binary.html", BITS=16)
+
 
 # runs the application on the development server
 if __name__ == "__main__":
