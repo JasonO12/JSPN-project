@@ -40,6 +40,7 @@ def greet():
             return render_template("Soma.html", nickname=name)
     return render_template("Soma.html", nickname="World")
 
+
 @app.route('/nic', methods=['GET', 'POST'])
 def nic():
     if request.form:
@@ -47,6 +48,7 @@ def nic():
         if len(name) != 0:
             return render_template("Nicolas.html", nickname=name)
     return render_template("Nicolas.html", nickname="World")
+
 
 @app.route('/Paul', methods=['GET', 'POST'])
 def paul():
@@ -56,6 +58,7 @@ def paul():
             return render_template("Paul.html", nickname=name)
     return render_template("Paul.html", nickname="World")
 
+
 @app.route('/Jason', methods=['GET', 'POST'])
 def jason():
     if request.form:
@@ -64,9 +67,10 @@ def jason():
             return render_template("Jason.html", nickname=name)
     return render_template("Jason.html", nickname="World")
 
-@app.route('/Binary/', methods=['GET', 'POST'])
+
+@app.route('/binary/')
 def binary():
-    return render_template("Binary.html", BITS=16)
+    return render_template("binary.html")
 
 
 # runs the application on the development server

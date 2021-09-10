@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-{% extends "layouts/base.html" %}
-<html lang="en">
-<meta charset="UTF-8">
+{% extends "layouts/layout.html" %}
 
 <!-- Search for all the Hack: below for hack-a-thon and mini-lab requirements -->
 <!-- need to adjust Templates to start -->
@@ -10,6 +8,7 @@
            use HTML Input Form in Frontend, ie toward top of Page
            send initial value and updated values to form via Python render_template -->
 <!-- Hack: use 8 as default -->
+{% set BITS = 8 %}
 {% set MAX = ((2 ** BITS) - 1) %}
 
 <!-- Hack: Set bulbs and pass as variables via Python render_template
@@ -115,15 +114,8 @@
     </script>
 {% endblock %}
 
-{% block body %}
+{% block content %}
     <h1 class="text-center">Binary Math with Conversions</h1>
-    <div class="col-12">
-        <form action="/Binary" id="binary" method="POST" >
-            <label for="Bits">Type a number!</label>
-            <input name="bits" id="bits">
-            <input type="submit" value="Calculate!">
-        </form>
-    </div>
     <div class="container">
         <div class="row justify-content-md-center">
 
@@ -170,5 +162,4 @@
 
         </div>
     </div>
-
 {% endblock %}
