@@ -1,15 +1,24 @@
-<!-- Extending the predefined project layout -->
+<!DOCTYPE html>
 {% extends "layouts/base.html" %}
-
-<!- This variable sets name of browser tab  -->
-{% set project = "Stubby" %}
-
+<html lang="en">
+<meta charset="UTF-8">
+<title>Greeting</title>
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
-    <!- Try building a new body here ->
-    <p>Tech Talk 1 - Body Stub</p>
+<div class="col-12">
+    <p>Hello, {{nickname}}!</p>
+</div>
+<div class="col-12">
+    <form action="/greet" id="greet" method="POST" >
+        <label for="name">Type a greeting name?</label>
+        <input name="name" id="name">
+        <input type="submit" value="Greetings!">
+    </form>
+</div>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
 {% block background %}
 {% endblock %}
+
+</html>
