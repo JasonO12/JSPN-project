@@ -1,7 +1,7 @@
-| Syntax      | Description | Tasks         |
-|    :---:    |    :----:   |     :---:     |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| Contributors| GitHub      | Tasks         | And more      | And more      | And more      |
+|    :---:    |    :----:   |     :---:     | And more      | And more      | And more      |
+| Header      | Title       | Here's this   | And more      | And more      | And more      |
+| Paragraph   | Text        | And more      | And more      | And more      | And more      |
 +
 ## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 Runtime link: https://portfolio.nighthawkcodingsociety.com/
