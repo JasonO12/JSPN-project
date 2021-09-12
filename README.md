@@ -1,5 +1,5 @@
 | Contributors| GitHub      | Tasks         | And more      | And more      | And more      |
-|    :---:    |    :----:   |     :---:     | :---:         | :---:         |   :---:       |
+|    :---     |    :----:   |     :---:     | :---:         | :---:         |   :---:       |
 | Jason       | Title       | Here's this   | And more      | And more      | And more      |
 | Nicolas     | Text        | And more      | And more      | And more      | And more      |
 | Paul        | Text        | And more      | And more      | And more      | And more      |
