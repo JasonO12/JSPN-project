@@ -1,5 +1,5 @@
 | Contributors| GitHub      | Tasks         | And more      | And more      | And more      |
-|    :---:    |    :----:   |     :---:     | And more      | And more      | And more      |
+|    :---:    |    :----:   |     :---:     | :---:         | :---:         |   :---:       |
 | Header      | Title       | Here's this   | And more      | And more      | And more      |
 | Paragraph   | Text        | And more      | And more      | And more      | And more      |
 +
