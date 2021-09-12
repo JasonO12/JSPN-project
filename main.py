@@ -33,7 +33,7 @@ def stub():
 
 
 @app.route('/soma', methods=['GET', 'POST'])
-def greet():
+def soma():
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:
@@ -67,6 +67,13 @@ def jason():
             return render_template("Jason.html", nickname=name)
     return render_template("Jason.html", nickname="World")
 
+@app.route('/greet', methods=['GET', 'POST'])
+def greet():
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:
+            return render_template("greet.html", nickname=name)
+    return render_template("greet.html", nickname="World")
 
 @app.route('/binary/')
 def binary():
