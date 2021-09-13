@@ -1,4 +1,8 @@
 ## JSPN Project Credits
+
+|[JSPN Scrum Board](https://github.com/JasonO12/JSPN-project/projects/1)|[Insight Graphs](https://github.com/JasonO12/JSPN-project/graphs/contributors)|
+| :---   | :--- |
+
 | Contributors| GitHub      | Tasks         | Scrum Board   | Commits       | Journal Pairs |
 |    :---     |    :----:   |     :---:     | :---:         | :---:         |   :---        |
 | Jason Ott      | [@JasonO12](https://github.com/JasonO12)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)| [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)      | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=JasonO12)     | [Jason and Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing)     |
