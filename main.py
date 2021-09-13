@@ -80,6 +80,14 @@ def binary():
     return render_template("binary.html")
 
 
+@app.route('/Binary', methods=['GET', 'POST'])
+def Binary():
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:
+            return render_template("Binary.html", nickname=name)
+    return render_template("Binary.html", nickname="World")
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
