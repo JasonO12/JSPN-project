@@ -2,19 +2,23 @@
 {% extends "layouts/base.html" %}
 <html lang="en">
 <meta charset="UTF-8">
-<title>Greeting</title>
+<title>Jason</title>
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
+    <h1 style="color:orangered;">Meet Jason!</h1>
+    <body style="background-color:orange;">
     <div class="col-12">
         <p>Hello, {{nickname}}!</p>
     </div>
+    </body>
     <div class="col-12">
         <form action="/Jason" id="greet" method="POST" >
-            <label for="name">Type a greeting name?</label>
+            <label for="name">What's your name?</label>
             <input name="name" id="name">
             <input type="submit" value="Greetings!">
         </form>
     </div>
+    <a class="nav-link" href={{ url_for('index') }}>Return</a>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
