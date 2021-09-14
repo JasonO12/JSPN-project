@@ -1,8 +1,30 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
+<!DOCTYPE html>
 {% extends "layouts/base.html" %}
+<html lang="en">
+<meta charset="UTF-8">
 <body>
-<img src="https://w7.pngwing.com/pngs/609/772/png-transparent-popcorn-area-cartoon-rectangle-popcorn-food-text-food-drinks.png" alt="">
+<style>
+    :root{
+        --white: whitesmoke;
+        --black: black;
+        --grey: #952929;
+    }
+
+    html, body{
+        margin: 0;
+        height: 100%;
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari and Chrome */
+        -o-animation: fadein 2s; /* Opera */
+        background-color: blueviolet;
+        background-image: url("https://t4.ftcdn.net/jpg/02/45/88/71/240_F_245887119_svjRjxyo90Fs8z6ZYQD97iQkk4dW9Hxs.jpg");
+        color: var(--white);
+    }
+    </style>
 </body>
+
 <!-- Setting up variables to customize "project" details to be specific to index page -->
 {% set project = "JSPN Movies" %}
 {% set overview = "https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter" %}

@@ -79,6 +79,10 @@ def greet():
 def binary():
     return render_template("binary.html")
 
+@app.route('/designs/')
+def designs():
+    return render_template("designs.html")
+
 
 @app.route('/Binary', methods=['GET', 'POST'])
 def Binary():
