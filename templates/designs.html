@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-{% extends "layouts/layout.html" %}
+{% extends "layouts/base.html" %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Wire Frame</title>
-</head>
-<body>
-    <ul id="navigation">
-        {% for item in navigation %}
-            <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
-        {% endfor %}
-    </ul>
-
-    <h1>Blue print</h1>
-    {{ a_variable }}
-</body>
+<meta charset="UTF-8">
+<title>Blue Prints</title>
+<!- This is a replacement block for Body in base.html -->
 {% block body %}
+    <body style="background-color:lightseagreen;">
+    <div class="w3-container w3-green w3-cell">
+        <p>             Top Movies</p>
+        <p>             Locations and times</p>
+        <p>             Coupons</p>
+    </div>
 {% endblock %}
 
-    <!- This is turning off birds background from base.html -->
-    {% block background %}
-    {% endblock %}
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
+
 </html>
