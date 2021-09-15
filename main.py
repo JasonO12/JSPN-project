@@ -87,10 +87,10 @@ def designs():
 @app.route('/Binary', methods=['GET', 'POST'])
 def Binary():
     if request.form:
-        name = request.form.get("name")
-        if len(name) != 0:
-            return render_template("Binary.html", nickname=name)
-    return render_template("Binary.html", nickname="World")
+        bits = request.form.get("bits")
+        if len(bits) != 0:
+            return render_template("Binary.html", bits=int(bits))
+    return render_template("Binary.html", bits=8)
 
 # runs the application on the development server
 if __name__ == "__main__":
