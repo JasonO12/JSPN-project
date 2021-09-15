@@ -5,12 +5,37 @@
 <title>Blue Prints</title>
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
+    <head>
+        <style>
+            table {
+                border-spacing: 100px;
+            }
+        </style>
+    </head>
     <body style="background-color:lightseagreen;">
-    <div class="w3-container w3-green w3-cell">
-        <p>             Top Movies</p>
-        <p>             Locations and times</p>
-        <p>             Coupons</p>
+    <div class="w3-container">
+
+    <h2>Best selling Video Games</h2>
+
     </div>
+    <table style="width:100%">
+        <tr>
+            <td><img src="https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png" width="100"></td>
+            <td><img src="http://assets.stickpng.com/images/5b43b818e99939b4572e32ab.png" width="100"></td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/1280px-Valorant_logo_-_pink_color_version.svg.png" width="100"></td>
+        </tr>
+        <tr>
+            <td><img src="" width="100"></td>
+            <td><img src="" width="100"></td>
+            <td><img src="" width="100"></td>
+        </tr>
+        <tr>
+            <td><img src="" width="100"></td>
+            <td><img src="" width="100"></td>
+            <td><img src="" width="100"></td>
+        </tr>
+    </table>
+    </body>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
