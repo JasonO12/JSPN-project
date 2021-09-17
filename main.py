@@ -95,6 +95,7 @@ def Binary():
         bits = request.form.get("bits")
         if len(bits) != 0:
             return render_template("Binary.html", bits=int(bits))
+
     return render_template("Binary.html", bits=8)
 
 # runs the application on the development server
