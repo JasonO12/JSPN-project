@@ -92,6 +92,14 @@ def Binary():
             return render_template("Binary.html", bits=int(bits))
     return render_template("Binary.html", bits=8)
 
+@app.route('/rgb', methods=['GET', 'POST'])
+def rgb():
+    if request.form:
+        bits = request.form.get("bits")
+        if len(bits) != 0:
+            return render_template("rgb.html", bits=int(bits))
+    return render_template("rgb.html", bits=8)
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
