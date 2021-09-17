@@ -75,28 +75,19 @@ def greet():
             return render_template("greet.html", nickname=name)
     return render_template("greet.html", nickname="World")
 
-@app.route("/binary/", methods=['GET', 'POST'])
-def binary():
-    if request.form:
-        bits = request.form.get("bits")
-        if int(bits) > 7:
-            return render_template("binary.html", bits=8)
-
-    return render_template("binary.html", bits=8)
-
 @app.route('/designs/')
 def designs():
     return render_template("designs.html")
 
 
-@app.route('/Binary', methods=['GET', 'POST'])
-def Binary():
+@app.route('/binary/', methods=['GET', 'POST'])
+def binary():
     if request.form:
         bits = request.form.get("bits")
-        if len(bits) != 0:
-            return render_template("Binary.html", bits=int(bits))
+        if int(bits) > 0:
+            return render_template("Binary.html", BITS=int(bits))
 
-    return render_template("Binary.html", bits=8)
+    return render_template("Binary.html", BITS=8)
 
 # runs the application on the development server
 if __name__ == "__main__":
