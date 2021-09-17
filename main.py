@@ -75,22 +75,21 @@ def greet():
             return render_template("greet.html", nickname=name)
     return render_template("greet.html", nickname="World")
 
-@app.route('/binary/')
-def binary():
-    return render_template("binary.html")
-
 @app.route('/designs/')
 def designs():
     return render_template("designs.html")
 
 
-@app.route('/Binary', methods=['GET', 'POST'])
-def Binary():
+@app.route('/binary/', methods=['GET', 'POST'])
+def binary():
     if request.form:
         bits = request.form.get("bits")
-        if len(bits) != 0:
-            return render_template("Binary.html", bits=int(bits))
-    return render_template("Binary.html", bits=8)
+        if int(bits) > 0:
+            return render_template("Binary.html", BITS=int(bits))
+
+    return render_template("Binary.html", BITS=8)
+
+
 
 @app.route('/rgb', methods=['GET', 'POST'])
 def rgb():
