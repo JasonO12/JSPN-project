@@ -75,9 +75,14 @@ def greet():
             return render_template("greet.html", nickname=name)
     return render_template("greet.html", nickname="World")
 
-@app.route('/binary/')
+@app.route("/binary/", methods=['GET', 'POST'])
 def binary():
-    return render_template("binary.html")
+    if request.form:
+        bits = request.form.get("bits")
+        if int(bits) > 7:
+            return render_template("binary.html", bits=8)
+
+    return render_template("binary.html", bits=8)
 
 @app.route('/designs/')
 def designs():
