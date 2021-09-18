@@ -89,6 +89,11 @@ def binary():
 
     return render_template("Binary.html", BITS=8)
 
+@app.route('/RGB/')
+def RGB():
+    return render_template("RGB.html")
+
+
 @app.route('/login/')
 def login():
     return render_template("login.html")
