@@ -98,6 +98,10 @@ def RGB():
 def login():
     return render_template("login.html")
 
+@app.route('/journals/')
+def journals():
+    return render_template("journals.html")
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
