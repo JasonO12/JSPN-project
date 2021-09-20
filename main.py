@@ -89,18 +89,9 @@ def binary():
 
     return render_template("Binary.html", BITS=8)
 
-@app.route('/RGB/')
-def RGB():
-    return render_template("RGB.html")
-
-
 @app.route('/login/')
 def login():
     return render_template("login.html")
-
-@app.route('/journals/')
-def journals():
-    return render_template("journals.html")
 
 # runs the application on the development server
 if __name__ == "__main__":
