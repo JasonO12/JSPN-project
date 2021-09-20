@@ -15,8 +15,6 @@
 Runtime_Link
 ============
 
-To be determined!
-
 Sprint_2_Week_2
 ============
 
@@ -45,4 +43,7 @@ Nic | ![image] |
 Paul | ![image] |
 Soma | ![image] |
 Review binary | Binary Numbers: What binary numbers are and how they are used. All the media that we see in modern devices are made from millions of simple on/off switches *full notes found in journal*|
+
+Sprint_3_Week_4
+============
 
