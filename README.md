@@ -10,7 +10,8 @@
 | Paul DiPasquale       | [@Paul-D6](https://github.com/Paul-D6)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)      | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=Paul-D6)    | [Jason and Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing)      |
 | Somaditya Singh        | [@somaditya1](https://github.com/somaditya1)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)    | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=somaditya1)    | [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing)     |
 
-
+#### Ideation
+Our idea is to create a website about popular video games, providing diverse information. This will include ratings, most popular games, genre of games, graphics cards required, and more. We will include login systems, navbar dropdowns, and unique CSS to make our website unique and easy to navigate. 
 
 Runtime_Link
 ============
@@ -44,6 +45,9 @@ Paul | ![image] |
 Soma | ![image] |
 Review binary | Binary Numbers: What binary numbers are and how they are used. All the media that we see in modern devices are made from millions of simple on/off switches *full notes found in journal*|
 
-Sprint_3_Week_4
+Sprint_4_Week_4
 ============
 
+
+Sprint_5_Week_5
+============
