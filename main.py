@@ -93,9 +93,14 @@ def binary():
 def login():
     return render_template("login.html")
 
+@app.route('/journals/')
+def journals():
+    return render_template("journals.html")
+
 @app.route('/rgb/')
 def rgb():
     return render_template("rgb.html")
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
