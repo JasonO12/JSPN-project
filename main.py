@@ -1,6 +1,7 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
 from algorithm.image import image_data
+
 # create a Flask instance
 app = Flask(__name__)
 
@@ -96,6 +97,8 @@ def login():
 @app.route('/rgb/')
 def rgb():
     return render_template('rgb.html', images=image_data())
+
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
