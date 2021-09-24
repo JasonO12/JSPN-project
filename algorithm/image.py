@@ -29,7 +29,7 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
             {'source': "iconsdb.com", 'label': "White square", 'file': "white-square-16.png"},
             {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.jpg"}
         ]
-    # gather analysis data and meta data for each image, adding attributes to each row in table
+    # gather analysis data and meta data for each image, adding attributes to each row in tables
     for img_dict in img_list:
         img_dict['path'] = '/' + path  # path for HTML access (frontend)
 
