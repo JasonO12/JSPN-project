@@ -2,12 +2,6 @@
 {% extends "layouts/layout.html" %}
 
 {% block meta %}
-    <script>
-        function setImg(img, base64) {
-            // add button and rotate image from original to gray and back (toggle)
-            // document.getElementById(img). =4;  //change img src to inner html on <p> tag
-        }
-    </script>
 
     <title>RGB starter</title>
 {% endblock %}
@@ -39,6 +33,19 @@
                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
                         </td>
+                        <button onclick="grayFunction()">grayscale</button>
+                        <script>
+                            let grayscale = 0
+                            function grayFunction() {
+                                if (grayscale === 0 ) {
+                                    document.body.style.filter = "grayscale(100%)";
+                                    grayscale = 100
+                                } else if (grayscale === 100 ) {
+                                    document.body.style.filter = "grayscale(0%)";
+                                    grayscale = 0
+                                }
+                            }
+                        </script>
                         <td>
                             <div class="overflow-auto" style="height: 256px">
                                 <table class="table">
@@ -78,5 +85,3 @@
     {% endblock %}
 
 {% endblock %}
-
-
