@@ -1,5 +1,4 @@
 from PIL import Image, ImageDraw
-import requests
 import numpy
 import base64
 from io import BytesIO
@@ -33,12 +32,9 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
     for img_dict in img_list:
         img_dict['path'] = '/' + path  # path for HTML access (frontend)
 
-        file = "http://127.0.0.1:5000/"+path + img_dict['file']  # file with path for local access (backend)
-        response = requests.get(file)
+        file = path + img_dict['file']
 
-
-    # Python Image Library operations
-        img_reference = Image.open(BytesIO(response.content))  # PIL
+        img_reference = Image.open(file)
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
         img_dict['mode'] = img_reference.mode
