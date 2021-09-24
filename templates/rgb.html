@@ -5,11 +5,11 @@
 
     <title>RGB starter</title>
 {% endblock %}
-
 {% block content %}
     <h1 class="text-center">RGB values within an Image</h1>
     <div class="container">
         <div class="row justify-content-md-center">
+            <button onclick="grayFunction()">grayscale</button>
             <table class="table">
                 <thead>
                 <tr>
@@ -33,7 +33,6 @@
                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
                         </td>
-                        <button onclick="grayFunction()">grayscale</button>
                         <script>
                             let grayscale = 0
                             function grayFunction() {
