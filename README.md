@@ -12,11 +12,32 @@
 | Paul DiPasquale       | [@Paul-D6](https://github.com/Paul-D6)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)      | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=Paul-D6)    | [Jason and Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing)      |
 | Somaditya Singh        | [@somaditya1](https://github.com/somaditya1)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)    | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=somaditya1)    | [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing)     |
 
-Week_5
+Week 5
 ============
 
 Week 4
 ============
+
+### Team Scoring
+| Requirment | Evidence | Grade |
+| ---        | ---      | --- |
+| Scrum Master Video - Week 4 | [Video link](https://youtu.be/QoqK6fEfP5Q) | N/A |
+| Team and Scrum Master Planning by Wednesday  |[Scrum Board] | 1/1 |
+| Team Technicals 2 points.  Evaluation is on how Planning and individual Issues compliment the entire project. | [Scrum Board] | 2/2 |
+
+### Individual Scoring
+| Name | Requirment | Evidence | Grade |
+| --- | ---        | ---      | --- |
+| Jason | Individual Technicals 2 point.  Code commits is required on something Technical. | [Ticket](https://github.com/JasonO12/JSPN-project/projects/1#card-68555280) and [commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=JasonO12) | 2/2 |
+| Nic | Individual Technicals 2 point.  Code commits is required on something Technical. | [Ticket](https://github.com/JasonO12/JSPN-project/projects/1#card-68555280) and [commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=nicm2) | 2/2 |
+| Paul | Individual Technicals 2 point.  Code commits is required on something Technical. | [Ticket](https://github.com/JasonO12/JSPN-project/projects/1#card-68555280) and [commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=Paul-D6) | 2/2 |
+| Soma | Individual Technicals 2 point.  Code commits is required on something Technical. | [Ticket](https://github.com/JasonO12/JSPN-project/projects/1#card-68555280) and [commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=somaditya1) | 2/2 |
+
+### Week 4 Screenshots - Binary Tab and Insight Graphs
+
+  ![image](https://cdn.discordapp.com/attachments/750552701686775968/891812697069486090/unknown.png)
+  ![image](https://cdn.discordapp.com/attachments/750552701686775968/891809525093502976/unknown.png)
+
 
 Week 3
 ============
@@ -35,6 +56,12 @@ Review binary | Notes completed in [Paul/Jason Journal](https://docs.google.com/
 | Make Issues and assign to individuals, place Issues in appropriate Column as you progress.  Groom columns and issues to be relevant for week.  Have team members create check boxes and comment on issues that they have accepted work. | [Scrum Board](https://github.com/JasonO12/JSPN-project/projects/1) |
 | As you move Issues into review, have individuals link Tangible assets to the Issue.  Individual should add comments that highlight anything Scrum master should report through Video. | [Review Ticket](https://github.com/JasonO12/JSPN-project/issues/14) and [Scrum Board](https://github.com/JasonO12/JSPN-project/projects/1)|
 | At close of each Week update README with links to issues, and any highlight words that would be nice to see without clicking into the issue.  Time box this README section declaring Week and Sprint dates in a section Header using Markdown | Done |
+  
+### Week 3 Screenshots - Style Experimenting and Navbar Organization
+
+  ![image](https://cdn.discordapp.com/attachments/750552701686775968/891801857180188732/unknown.png)
+  ![image](https://cdn.discordapp.com/attachments/750552701686775968/891802239914623006/unknown.png)
+  ![image](https://cdn.discordapp.com/attachments/750552701686775968/891802287385739364/unknown.png)
 
 Week 2
 ============
