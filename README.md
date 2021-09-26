@@ -28,6 +28,11 @@ JSPN Project P5
 
 ## Week 5
 
+### Individual Scoring
+| Team Pair | Requirment | Evidence | Grade |
+| --- | ---        | ---      | --- |
+| Jason/Paul | Scrum/Pair activity.  Listen to OO's and TO's introduction.  Write about OOs' and TOs roles in your journal.  Brainstorm on how you think fellow student can help you in Test Prep.  Review idea with Scrum Team, then review again with Crossover team.  Each Scrum Team create summary and provide ideas to OO's. Unit 3.1/3.2 journaling. Post Collegeboard quiz grades.| [OO and TO notes](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit#bookmark=id.zh2rgal8sw3y), [Journal 3.1/3.2 notes](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit#bookmark=id.q5h6wmrotnso), and [Collegeboard quiz scores](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit#bookmark=id.h4mqf4gjzoyi). OO/TO grading [Ticket](https://github.com/JasonO12/JSPN-project/issues/28) and issue [Ticket](https://github.com/JasonO12/JSPN-project/projects/1#card-69162971). | 3/3 |
+| Nic/Soma | Scrum/Pair activity.  Listen to OO's and TO's introduction.  Write about OOs' and TOs roles in your journal.  Brainstorm on how you think fellow student can help you in Test Prep.  Review idea with Scrum Team, then review again with Crossover team.  Each Scrum Team create summary and provide ideas to OO's. Unit 3.1/3.2 journaling. Post Collegeboard quiz grades. | [OO and TO notes](), [Journal 3.1/3.2 notes](), and [Collegeboard quiz scores](). OO/TO grading [Ticket](https://github.com/JasonO12/JSPN-project/issues/29) and issue [Ticket](https://github.com/JasonO12/JSPN-project/projects/1#card-69162286). | 3/3 |
 
 
 ## Week 4
@@ -37,8 +42,8 @@ JSPN Project P5
 | Requirment | Evidence | Grade |
 | ---        | ---      | --- |
 | Scrum Master Video - Week 4 | [Video link](https://youtu.be/QoqK6fEfP5Q) | N/A |
-| Team and Scrum Master Planning by Wednesday  |[Scrum Board] | 1/1 |
-| Team Technicals 2 points.  Evaluation is on how Planning and individual Issues compliment the entire project. | [Scrum Board] | 2/2 |
+| Team and Scrum Master Planning by Wednesday  |[Scrum Board](https://github.com/JasonO12/JSPN-project/projects/1) | 1/1 |
+| Team Technicals 2 points.  Evaluation is on how Planning and individual Issues compliment the entire project. | [Scrum Board](https://github.com/JasonO12/JSPN-project/projects/1) | 2/2 |
 
 ### Individual Scoring
 | Name | Requirment | Evidence | Grade |
