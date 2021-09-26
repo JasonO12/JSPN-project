@@ -1,6 +1,20 @@
+JSPN Project P5
+=============
+
+## Table Of Contents
+
+  - [Project Credits](https://github.com/JasonO12/JSPN-project#jspn-project-credits)
+  - [Week 5](https://github.com/JasonO12/JSPN-project#week-5)
+  - [Week 4](https://github.com/JasonO12/JSPN-project#week-4)
+  - [Week 3](https://github.com/JasonO12/JSPN-project#week-3)
+  - [Week 2](https://github.com/JasonO12/JSPN-project#week-2)
+  - [Ideation](https://github.com/JasonO12/JSPN-project#ideation)
+
+
 ## JSPN Project Credits
 
-### Runtime_Link
+ 
+### Runtime Link
 
 |[JSPN Scrum Board](https://github.com/JasonO12/JSPN-project/projects/1)|[Insight Graphs](https://github.com/JasonO12/JSPN-project/graphs/contributors)|
 | :---   | :--- |
@@ -12,11 +26,12 @@
 | Paul DiPasquale       | [@Paul-D6](https://github.com/Paul-D6)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)      | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=Paul-D6)    | [Jason and Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing)      |
 | Somaditya Singh        | [@somaditya1](https://github.com/somaditya1)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)    | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=somaditya1)    | [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing)     |
 
-Week 5
-============
+## Week 5
 
-Week 4
-============
+
+
+## Week 4
+
 
 ### Team Scoring
 | Requirment | Evidence | Grade |
@@ -39,8 +54,7 @@ Week 4
   ![image](https://cdn.discordapp.com/attachments/750552701686775968/891809525093502976/unknown.png)
 
 
-Week 3
-============
+## Week 3
 
 Requirements | Evidence |
 ----------- | ----------- |
@@ -63,8 +77,7 @@ Review binary | Notes completed in [Paul/Jason Journal](https://docs.google.com/
   ![image](https://cdn.discordapp.com/attachments/750552701686775968/891802239914623006/unknown.png)
   ![image](https://cdn.discordapp.com/attachments/750552701686775968/891802287385739364/unknown.png)
 
-Week 2
-============
+## Week 2
 
 Requirements | Evidence |
 ----------- | ----------- |
@@ -88,7 +101,7 @@ Developers. Integration of Video Journal 0 into a mini-lab page | [Video Journal
 | Soma|7/7| ![image](https://cdn.discordapp.com/attachments/750552701686775968/891784719245639760/unknown.png)|Personal laptop at home and school|
 | Nic |7/7| ![image](https://cdn.discordapp.com/attachments/750552701686775968/891784407097171978/unknown.png)|Personal laptop at home and school|
 
-## [Video Journal 0](https://www.youtube.com/watch?v=Lz1NFP2E134)
+### [Video Journal 0](https://www.youtube.com/watch?v=Lz1NFP2E134)
 
 #### Ideation
 Our idea is to create a website about popular video games, providing diverse information. This will include ratings, most popular games, genre of games, graphics cards required, and more. We will include login systems, navbar dropdowns, and unique CSS to make our website unique and easy to navigate. 
