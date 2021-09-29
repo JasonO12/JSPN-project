@@ -2,6 +2,8 @@
 from flask import Flask, render_template, request
 from algorithm.image import image_data
 
+
+from pathlib import Path
 # create a Flask instance
 app = Flask(__name__)
 
@@ -94,16 +96,10 @@ def binary():
 def login():
     return render_template("login.html")
 
-@app.route('/rgb/', methods=["GET", "POST"])
+@app.route('/rgb/')
 def rgb():
-    rawList = image_data()
-    colorList = []
-    grayList = []
-    for img in rawList:
-        colorList.append(img['base64'])
-        grayList.append(img['base64_GRAY'])
-
-    return render_template('rgb.html', images=rawList, colored=colorList, grayed=grayList)
+    path = Path(app.root_path) / "static" / "assets"
+    return render_template('rgb.html', images=image_data(path))
 
 
 # runs the application on the development server
