@@ -1,6 +1,7 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
 from algorithm.image import image_data
+from pathlib import Path
 
 # create a Flask instance
 app = Flask(__name__)
@@ -96,6 +97,7 @@ def login():
 
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
+    path = Path(app.root_path) / "static" / "img"
     rawList = image_data()
     colorList = []
     grayList = []
