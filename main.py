@@ -97,7 +97,7 @@ def login():
 
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
-    path = Path(app.root_path) / "static" / "img"
+    path = Path(app.root_path) / "static" / "assets"
     rawList = image_data()
     colorList = []
     grayList = []
