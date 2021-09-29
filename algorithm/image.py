@@ -1,8 +1,8 @@
+from pathlib import Path
 from PIL import Image, ImageDraw
 import numpy
 import base64
 from io import BytesIO
-
 
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 def image_base64(img, img_type):
@@ -17,7 +17,8 @@ def image_formatter(img, img_type):
 
 
 # color_data prepares a series of images for data analysis
-def image_data(path="static/assets/", img_list=None):  # path of static images is defaulted
+
+def image_data(path=Path("static/assets/"), img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
             {'source': "Peter Carolin", 'label': "Lassen Volcano", 'file': "lassen-volcano-256.jpg"},
@@ -30,9 +31,9 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
         ]
     # gather analysis data and meta data for each image, adding attributes to each row in tables
     for img_dict in img_list:
-        img_dict['path'] = '/' + path  # path for HTML access (frontend)
+    # File to open
+        file = path / img_dict['file']  # file with path for local access (backend)
 
-        file = path + img_dict['file']
 
         img_reference = Image.open(file)
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
@@ -69,7 +70,7 @@ def image_data(path="static/assets/", img_list=None):  # path of static images i
 
 # run this as standalone tester to see data printed in terminal
 if __name__ == "__main__":
-    local_path = "../static/img/"
+    local_path = "static/img/"
     img_test = [
         {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
     ]
