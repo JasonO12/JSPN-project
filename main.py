@@ -1,7 +1,9 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
 from algorithm.image import image_data
+from pathlib import Path
 
+# https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
 # create a Flask instance
 app = Flask(__name__)
 
@@ -96,7 +98,8 @@ def login():
 
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
-    rawList = image_data()
+    path = Path(app.root_path) / "static" / "assets"
+    rawList = image_data(path)
     colorList = []
     grayList = []
     for img in rawList:
