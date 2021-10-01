@@ -9,9 +9,9 @@
         //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
         var color = {{ colored|safe }}
         var gray = {{ grayed|safe }}
-        var imageType = 0; // 0 is color, 1 is gray
+        var imageColor = 0;
 
-        function toggleColors(array) {
+        function grayscale(array) {
             for (var i = 1; i <= array.length; i++) {
                 let id = "img" + i;
                 setImg(id, array[i-1]);
@@ -19,12 +19,12 @@
         }
 
         function toggle() {
-            if (imageType === 0) {
-                toggleColors(gray);
-                imageType = 1;
+            if (imageColor === 0) {
+                grayscale(gray);
+                imageColor = 1;
             } else {
-                toggleColors(color);
-                imageType = 0;
+                grayscale(color);
+                imageColor = 0;
             }
         }
 
