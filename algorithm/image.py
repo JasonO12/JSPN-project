@@ -1,7 +1,6 @@
 from PIL import Image, ImageDraw
 import numpy
 import base64
-import requests
 from io import BytesIO
 from pathlib import Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
 
@@ -106,7 +105,7 @@ if __name__ == "__main__":
         # display image
         print("----  render and write in image  -----")
         filename = local_path + row['file']
-        image_ref = Image.open(filename)
+        # image_ref = Image.open(filename)
         draw = ImageDraw.Draw(image_ref)
         draw.text((0, 0), "Size is {0} X {1}".format(*row['size']))  # draw in image
         image_ref.show()
