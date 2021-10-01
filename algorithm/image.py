@@ -36,7 +36,7 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
 
         img_reference = Image.open(file)
         d1 = ImageDraw.Draw(img_reference)
-        d1.text((0, 0), "JSPN-Video Games", fill=(0, 170, 170))
+        d1.text((0, 0), "JPN-Video Games", fill=(0, 170, 170))
         hori_flippedImage = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
 
 
