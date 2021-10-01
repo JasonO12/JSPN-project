@@ -25,9 +25,9 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
             {'source': "iconsdb.com", 'label': "Black square", 'file': "black-square-16.png"},
             {'source': "iconsdb.com", 'label': "Red square", 'file': "red-square-16.png"},
             {'source': "iconsdb.com", 'label': "Green square", 'file': "green-square-16.png"},
-            {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
+            {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.jpg"},
             {'source': "iconsdb.com", 'label': "White square", 'file': "white-square-16.png"},
-            {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.jpg"}
+
         ]
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
@@ -35,6 +35,11 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
         # img_dict['path'] = '/' + path  # path for HTML access (frontend)
 
         img_reference = Image.open(file)
+        d1 = ImageDraw.Draw(img_reference)
+        d1.text((0, 0), "Hello, TutorialsPoint!", fill=(255, 0, 0))
+        hori_flippedImage = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
+
+
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
         img_dict['mode'] = img_reference.mode
@@ -56,6 +61,10 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
             img_dict['binary_array'].append(bin_value)
         # create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
         img_dict['gray_data'] = []
+        img_dict['flip'] = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
+        degree_flippedImage = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
+        img_dict['base64_flip'] = image_formatter(degree_flippedImage, img_dict['format'])
+
         for pixel in img_dict['data']:
             average = (pixel[0] + pixel[1] + pixel[2]) // 3
             if len(pixel) > 3:
