@@ -28,6 +28,20 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
             {'source': "iconsdb.com", 'label': "White square", 'file': "white-square-16.png"},
 
         ]
+
+    # for img_dict in img_list:
+    #     img_dict['path'] = '/' + path  # path for HTML access (frontend)
+    #     file = path + img_dict['file']  # file with path for local access (backend)
+    #     processing = img_dict['processing']
+    #     # Python Image Library operations
+    #     if processing == "gaussian":
+    #         # GAUSSIAN BLUR IMAGE OPERATION
+    #         origImage = Image.open(file)
+    #         gaussImage = origImage.filter(ImageFilter.GaussianBlur(5))
+    #         gaussImage.save("static/TestImages/gaussian/" + img_dict['file'])
+    #         gaussFile = "static/TestImages/gaussian/" + img_dict['file']
+    #         img_reference = Image.open(gaussFile)
+
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
         file = path / img_dict['file']  # file with path for local access (backend)
