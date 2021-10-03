@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 import numpy
 import base64
 import requests
@@ -21,7 +21,7 @@ def image_formatter(img, img_type):
 def image_data(path=Path("static/assets/"), img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
-            {'source': "Peter Carolin", 'label': "Lassen Volcano", 'file': "lassen-volcano-256.jpg"},
+            {'source': "Peter Carolin", 'label': "Lassen Volcano", 'file': "lassen-volcano-256.jpg", 'processing': "gaussian"},
             {'source': "iconsdb.com", 'label': "Black square", 'file': "black-square-16.png"},
             {'source': "iconsdb.com", 'label': "Red square", 'file': "red-square-16.png"},
             {'source': "iconsdb.com", 'label': "Green square", 'file': "green-square-16.png"},
@@ -29,6 +29,20 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
             {'source': "iconsdb.com", 'label': "White square", 'file': "white-square-16.png"},
 
         ]
+
+    # for img_dict in img_list:
+    #     img_dict['path'] = '/' + path  # path for HTML access (frontend)
+    #     file = path + img_dict['file']  # file with path for local access (backend)
+    #     processing = img_dict['processing']
+    #     # Python Image Library operations
+    #     if processing == "gaussian":
+    #         # GAUSSIAN BLUR IMAGE OPERATION
+    #         origImage = Image.open(file)
+    #         gaussImage = origImage.filter(ImageFilter.GaussianBlur(5))
+    #         gaussImage.save("static/TestImages/gaussian/" + img_dict['file'])
+    #         gaussFile = "static/TestImages/gaussian/" + img_dict['file']
+    #         img_reference = Image.open(gaussFile)
+
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
         file = path / img_dict['file']  # file with path for local access (backend)
@@ -36,8 +50,10 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
 
         img_reference = Image.open(file)
         d1 = ImageDraw.Draw(img_reference)
-        d1.text((0, 0), "JSPN-Video Games", fill=(0, 170, 170))
+        d1.text((0, 0), "JSPN-Video Games", fill=(30, 200, 100))
         hori_flippedImage = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
+        blurImage = img_reference.filter(ImageFilter.BLUR)
+
 
 
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
@@ -64,6 +80,8 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
         img_dict['flip'] = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
         degree_flippedImage = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
         img_dict['base64_flip'] = image_formatter(degree_flippedImage, img_dict['format'])
+
+
 
         for pixel in img_dict['data']:
             average = (pixel[0] + pixel[1] + pixel[2]) // 3
