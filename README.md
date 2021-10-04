@@ -42,6 +42,8 @@ JSPN Project P5
 | Jason/Paul |  Unit 3.3 and 3.4. Follow instructions and guidance from OO's. Complete online quiz and journal corrections. OO and TO to Review. TT6 and CB activity. Teacher to Review.    |  [Jason and Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing) and [Ticket](https://github.com/JasonO12/JSPN-project/issues/32)    | 2/2  |
 | Nic/Soma |  Unit 3.3 and 3.4. Follow instructions and guidance from OO's. Complete online quiz and journal corrections. OO and TO to Review. TT6 and CB activity. Teacher to Review.      |  [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing) and [Ticket](https://github.com/JasonO12/JSPN-project/issues/32)  | 2/2 |
 
+#### [Documenation](https://docs.google.com/document/d/19AXaWuXG6orp8M8j5ZbO4wLn8I68RCdDkyOd4c6JR94/edit) for code organization of our project
+
 ## Week 5
 
 ### Individual Scoring
