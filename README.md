@@ -31,16 +31,18 @@ JSPN Project P5
 ### RGB Team/Individual Scoring
 | Name | Requirment | Evidence | Grade |
 | --- | ---        | ---      | --- |
-| Jason | Requirment | Evidence | Grade |
-| Nic | Requirment | Evidence | Grade |
-| Paul | Requirment | Evidence | Grade |
-| Soma | Requirment | Evidence | Grade |
+| Jason | Attempt to implement Gaussian blur manipulation, change images in rgb page | [Ticket](https://github.com/JasonO12/JSPN-project/issues/21) for attempted blur code, at bottome of image.py.  | Grade |
+| Nic | Work on implementing greyscale manipulation into rgb page | [Ticket](https://github.com/JasonO12/JSPN-project/issues/21) for greyscale implementation. | Grade |
+| Paul |  Image manipulations in rgb, inlcuding text and image flip. | [Ticket](https://github.com/JasonO12/JSPN-project/issues/22) for image manipulations | Grade |
+| Soma |Try to implement big O shortcuts into code | [Ticket](https://github.com/JasonO12/JSPN-project/issues/22) for code simplification | Grade |
 
 ### College Board Requirements - Week 6
-| Team Pair | Requirment | Evidence | Grade |
+| Team Pair | Requirment | Evidence | Grade (on Slack) |
 | --- | ---        | ---      | --- |
-| Jason/Paul |  Unit 3.3 and 3.4. Follow instructions and guidance from OO's. Complete online quiz and journal corrections. OO and TO to Review. TT6 and CB activity. Teacher to Review.    |  [Jason and Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing) and [Ticket](https://github.com/JasonO12/JSPN-project/issues/32)    | TBD  |
-| Nic/Soma |  Unit 3.3 and 3.4. Follow instructions and guidance from OO's. Complete online quiz and journal corrections. OO and TO to Review. TT6 and CB activity. Teacher to Review.      |  [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing) and [Ticket](https://github.com/JasonO12/JSPN-project/issues/32)  | TBD |
+| Jason/Paul |  Unit 3.3 and 3.4. Follow instructions and guidance from OO's. Complete online quiz and journal corrections. OO and TO to Review. TT6 and CB activity. Teacher to Review.    |  [Jason and Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing) and [Ticket](https://github.com/JasonO12/JSPN-project/issues/32)    | 2/2  |
+| Nic/Soma |  Unit 3.3 and 3.4. Follow instructions and guidance from OO's. Complete online quiz and journal corrections. OO and TO to Review. TT6 and CB activity. Teacher to Review.      |  [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing) and [Ticket](https://github.com/JasonO12/JSPN-project/issues/32)  | 2/2 |
+
+#### [Documenation](https://docs.google.com/document/d/19AXaWuXG6orp8M8j5ZbO4wLn8I68RCdDkyOd4c6JR94/edit) for code organization of our project
 
 ## Week 5
 
