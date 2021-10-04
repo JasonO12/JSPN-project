@@ -99,13 +99,13 @@ def login():
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
     path = Path(app.root_path) / "static" / "assets"
-    colorList = []
-    grayList = []
+    color = []
+    gray = []
     for img in image_data(path):
-        colorList.append(img['base64'])
-        grayList.append(img['base64_GRAY'])
+        color.append(img['base64'])
+        gray.append(img['base64_GRAY'])
 
-    return render_template('rgb.html', images=image_data(path), colored=colorList, grayed=grayList)
+    return render_template('rgb.html', images=image_data(path), colored=color, grayed=gray)
 
 
 # runs the application on the development server
