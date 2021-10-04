@@ -31,7 +31,7 @@ JSPN Project P5
 ### RGB Team/Individual Scoring
 | Name | Requirment | Evidence | Grade |
 | --- | ---        | ---      | --- |
-| Jason | Attempt to implement Gaussian blur manipulation, change images in rgb page | [Ticket](https://github.com/JasonO12/JSPN-project/issues/21) for attempted blur code, at bottome of image.py.  | Grade |
+| Jason | Attempt to implement Gaussian blur manipulation, change images in rgb page | [Ticket](https://github.com/JasonO12/JSPN-project/issues/21) for attempted blur code, at bottom of image.py. [Ticket](https://github.com/JasonO12/JSPN-project/commit/0c5fb656aa68f5790bcb060d9f3bcb81ca6b39a2) for commit of custom images. | Grade |
 | Nic | Work on implementing greyscale manipulation into rgb page | [Ticket](https://github.com/JasonO12/JSPN-project/issues/21) for greyscale implementation. | Grade |
 | Paul |  Image manipulations in rgb, inlcuding text and image flip. | [Ticket](https://github.com/JasonO12/JSPN-project/issues/22) for image manipulations | Grade |
 | Soma |Try to implement big O shortcuts into code | [Ticket](https://github.com/JasonO12/JSPN-project/issues/22) for code simplification | Grade |
