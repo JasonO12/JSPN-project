@@ -10,9 +10,9 @@ starter_bp = Blueprint('starter', __name__,
 
 @starter_bp.route('/binary/')
 def binary():
-    return render_template("binary.html")
+    return render_template("MiniLabs/binary.html")
 
 
 @starter_bp.route('/rgb/')
 def rgb():
-    return render_template('rgb.html', images=image_data())
+    return render_template('MiniLabs/rgb.html', images=image_data())
