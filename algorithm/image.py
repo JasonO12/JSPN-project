@@ -20,8 +20,8 @@ def image_formatter(img, img_type):
 def image_data(path=Path("static/assets/"), img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
-            {'source': "google.com", 'label': "Pc Setup", 'file': "pcsetup.jpg"},
-            {'source': "google.com", 'label': "Minecraft Icon", 'file': "minecrafticon.png"},
+            {'source': "google", 'label': "Pc Setup", 'file': "pcsetup.jpg"},
+            {'source': "google", 'label': "Minecraft Icon", 'file': "minecrafticon.png"},
             {'source': "iconsdb.com", 'label': "Red square", 'file': "red-square-16.png"},
             {'source': "iconsdb.com", 'label': "Green square", 'file': "green-square-16.png"},
             {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.jpg"},
@@ -111,6 +111,21 @@ if __name__ == "__main__":
         draw.text((0, 0), "Size is {0} X {1}".format(*row['size']))  # draw in image
         image_ref.show()
 print()
+# function containDuplicates(array) {
+#     for (let i = 0; i < array.length; i++) {
+#         for (let r = 0; r < array.length; r++) {
+#         if (i == r) {
+#          continue;
+# }
+#  if (array[i]) === array[r]) {
+# return true;
+# }
+# }
+# }
+# return false;
+# }
+
+
 
 # for img_dict in img_list:
 #     img_dict['path'] = '/' + path  # path for HTML access (frontend)

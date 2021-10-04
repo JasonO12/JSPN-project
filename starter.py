@@ -7,7 +7,6 @@ starter_bp = Blueprint('starter', __name__,
                        static_folder='static',
                        static_url_path='assets')
 
-
 @starter_bp.route('/binary/')
 def binary():
     return render_template("MiniLabs/binary.html")
