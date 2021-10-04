@@ -124,4 +124,4 @@ print()
 #         gaussImage.save("static/TestImages/gaussian/" + img_dict['file'])
 #         gaussFile = "static/TestImages/gaussian/" + img_dict['file']
 #         img_reference = Image.open(gaussFile)
-# work in progress
+# work in progress still
