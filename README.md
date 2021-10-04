@@ -31,10 +31,10 @@ JSPN Project P5
 ### RGB Team/Individual Scoring
 | Name | Requirment | Evidence | Grade |
 | --- | ---        | ---      | --- |
-| Jason | Requirment | Evidence | Grade |
-| Nic | Requirment | Evidence | Grade |
-| Paul | Requirment | Evidence | Grade |
-| Soma | Requirment | Evidence | Grade |
+| Jason | Attempt to implement Gaussian blur manipulation, change images in rgb page | [Ticket](https://github.com/JasonO12/JSPN-project/issues/21) for attempted blur code, at bottome of image.py.  | Grade |
+| Nic | Work on implementing greyscale manipulation into rgb page | [Ticket](https://github.com/JasonO12/JSPN-project/issues/21) for greyscale implementation. | Grade |
+| Paul |  Image manipulations in rgb, inlcuding text and image flip. | [Ticket](https://github.com/JasonO12/JSPN-project/issues/22) for image manipulations | Grade |
+| Soma |Try to implement big O shortcuts into code | [Ticket](https://github.com/JasonO12/JSPN-project/issues/22) for code simplification | Grade |
 
 ### College Board Requirements - Week 6
 | Team Pair | Requirment | Evidence | Grade (on Slack) |
