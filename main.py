@@ -99,14 +99,13 @@ def login():
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
     path = Path(app.root_path) / "static" / "assets"
-    rawList = image_data(path)
-    colorList = []
-    grayList = []
-    for img in rawList:
-        colorList.append(img['base64'])
-        grayList.append(img['base64_GRAY'])
+    color = []
+    gray = []
+    for img in image_data(path):
+        color.append(img['base64'])
+        gray.append(img['base64_GRAY'])
 
-    return render_template('MiniLabs/rgb.html', images=rawList, colored=colorList, grayed=grayList)
+    return render_template('MiniLabs/rgb.html', images=image_data(path), colored=color, grayed=gray)
 
 
 # runs the application on the development server
