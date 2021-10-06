@@ -32,7 +32,7 @@
         }
         // setter for DOM values
         function setConversions(binary) {
-            document.getElementById('binary').innerHTML = binary;
+            document.getElementById('binary').innerHTML = parseInt(binary);
             // DOM assignment to Octal conversion
             document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
             // DOM assignment to Hexadecimal conversion
@@ -97,6 +97,7 @@
             } else  {     // MINUS
                 decimal = 0 === decimal ? MAX : decimal += n; // OVERFLOW or MINUS
             }
+
             // convert the result back to binary
             binary = decimal_2_base(decimal, 2);
             // update conversions
@@ -118,9 +119,9 @@
             let binary = getBits();
             // convert to decimal and do math
             let decimal = parseInt(binary, 2);
-            if (n > 0) {  // PLUS
-                decimal = MAX === decimal ? 0 : decimal *= n; // OVERFLOW or PLUS
-            } else  {     // MINUS
+            if (n > 0) {  // multiply
+                decimal = 0 === decimal ? 0 : decimal *= n; // OVERFLOW or PLUS
+            } else {     // divide
                 decimal = 0 === decimal ? MAX : decimal *= n; // OVERFLOW or MINUS
             }
             // convert the result back to binary
