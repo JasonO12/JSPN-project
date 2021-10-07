@@ -106,6 +106,14 @@ def rgb():
         gray.append(img['base64_GRAY'])
 
     return render_template('MiniLabs/rgb.html', images=image_data(path), colored=color, grayed=gray)
+@app.route('/addbinary/', methods=['GET', 'POST'])
+def addbinary():
+    if request.form:
+        bits = request.form.get("bits")
+        if int(bits) > 0:
+            return render_template("MiniLabs/addbinary.html", BITS=int(bits))
+
+    return render_template("MiniLabs/addbinary.html", BITS=8)
 
 
 # runs the application on the development server
