@@ -47,6 +47,9 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
         # img_dict['path'] = '/' + path  # path for HTML access (frontend)
 
         img_reference = Image.open(file)
+        gaussImage= img_reference.filter(ImageFilter.GaussianBlur(5))
+
+    #gaussImage.show()
         d1 = ImageDraw.Draw(img_reference)
         d1.text((0, 0), "JPN-Video Games", fill=(0, 170, 170))
         hori_flippedImage = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
@@ -58,7 +61,8 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
         img_dict['size'] = img_reference.size
         # Conversion of original Image to Base64, a string format that serves HTML nicely
         img_dict['base64'] = image_formatter(img_reference, img_dict['format'])
-        # Numpy is used to allow easy access to data of image, python list
+
+    # Numpy is used to allow easy access to data of image, python list
         img_dict['data'] = numpy.array(img_data)
         img_dict['hex_array'] = []
         img_dict['binary_array'] = []
@@ -73,9 +77,11 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
             img_dict['binary_array'].append(bin_value)
         # create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
         img_dict['gray_data'] = []
+        img_dict['base64_BLUR'] = image_formatter(gaussImage, img_dict['format'])
         img_dict['flip'] = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
         degree_flippedImage = img_reference.transpose(Image.FLIP_LEFT_RIGHT)
         img_dict['base64_flip'] = image_formatter(degree_flippedImage, img_dict['format'])
+
 
         for pixel in img_dict['data']:
             average = (pixel[0] + pixel[1] + pixel[2]) // 3
@@ -136,19 +142,3 @@ print()
 # }
 # return false;
 # }
-
-
-
-# for img_dict in img_list:
-#     img_dict['path'] = '/' + path  # path for HTML access (frontend)
-#     file = path + img_dict['file']  # file with path for local access (backend)
-#     processing = img_dict['processing']
-#     # Python Image Library operations
-#     if processing == "gaussian":
-#         # GAUSSIAN BLUR IMAGE OPERATION
-#         origImage = Image.open(file)
-#         gaussImage = origImage.filter(ImageFilter.GaussianBlur(5))
-#         gaussImage.save("static/TestImages/gaussian/" + img_dict['file'])
-#         gaussFile = "static/TestImages/gaussian/" + img_dict['file']
-#         img_reference = Image.open(gaussFile)
-# work in progress -
