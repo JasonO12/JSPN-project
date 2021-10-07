@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request
 from algorithm.image import image_data
 from pathlib import Path
+import math
 
 # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
 # create a Flask instance
@@ -106,6 +107,14 @@ def rgb():
         gray.append(img['base64_GRAY'])
 
     return render_template('MiniLabs/rgb.html', images=image_data(path), colored=color, grayed=gray)
+@app.route('/addbinary/', methods=['GET', 'POST'])
+def addbinary():
+    if request.form:
+        bits = request.form.get("bits")
+        if int(bits) > 0:
+            return render_template("MiniLabs/addbinary.html", BITS=int(bits))
+
+    return render_template("MiniLabs/addbinary.html", BITS=8)
 
 
 # runs the application on the development server
