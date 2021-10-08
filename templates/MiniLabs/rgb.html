@@ -5,7 +5,7 @@
     <script>
         // Hack: add java script function to toggle image from original to gray and back (toggle)
         //  document.getElementById("img<n>").src
-        //  document.getElementID("img_gray<n>").innerHTML
+        //  document.getElementID("img_gray<n>").inerHTML
         //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
         var color = {{ colored|safe }}
         var gray = {{ grayed|safe }}
@@ -104,6 +104,8 @@
                         <td>
                             <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64_flip}}" >
                         </td>
+
+
 
                     </tr>
 
