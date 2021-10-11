@@ -43,45 +43,41 @@
             let numR1 = parseInt(bitsR1, 2).toString(10);
             let numR2 = parseInt(bitsR2, 2).toString(10);
             let result3 = numR1 + numR2
-
-            alert(result3);
             document.getElementById('resultB').innerHTML = parseInt(result3, 10).toString(2);
             {#let resultB = parseInt(result3, 10).toString(2);#}
             {#document.getElementById('resultB').innerHTML = text;#}
 
         }
         function signedAddition () {
+            let i;
             let bitsR1R2 = getBits();
             let bitsR1 = bitsR1R2[0];
             let bitsR2 = bitsR1R2[1];
-            var num1 = 0;
-            var num2 = 0;
-            var output = 0;
-            const firstBitOne = document.getElementById('digitR11');
-            const firstBitTwo = document.getElementById('digitR21');
-            for (var i = 2; i <= 8; i++) {
+            let num1 = 0;
+            let num2 = 0;
+            let output = 0;
+
+            const firstBitOne = document.getElementById('digitR10');
+            for (i = 1; i < 8; i++) {
                 let element1 = document.getElementById('digitR1' + i);
-                num1 += Math.pow(2, 8 - i) * parseInt(element1.value);
+                num1 += Math.pow(2, 7 - i) * parseInt(element1.value);
             }
             alert(num1);
-            for (var i = 2; i <= 8; i++) {
+            const firstBitTwo = document.getElementById('digitR20');
+            for (i = 1; i < 8; i++) {
                 let element2 = document.getElementById('digitR2' + i);
-                num2 += Math.pow(2, 8 - i) * parseInt(element2.value);
+                num2 += Math.pow(2, 7 - i) * parseInt(element2.value);
             }
             if (firstBitOne.innerHTML === "1") {
                 num1 = 0-num1;
             }
-            else {
-                num1 = num1;
-            }
+
             if (firstBitTwo.innerHTML === "1") {
                 num2 = 0-num2;
             }
-            else {
-                num2 = num2;
-            }
+
             output = num1 + num2
-            var resultA = output.toString();
+            const resultA = output.toString();
             document.getElementById('resultA').innerHTML = resultA;
 
         }
@@ -103,8 +99,8 @@
                         <th>Signed Sum</th>
                     </tr>
                     <tr>
-                        <td><button type="button" id="add" onclick="Unsigned()">(+)</button></td>
-                        <td><button type="button" id="add" onclick="signedAddition()">(+)</button></td>
+                        <td><button type="button" id="add" onclick="Unsigned()"> + </button></td>
+                        <td><button type="button" id="s_add" onclick="signedAddition()"> + </button></td>
                         <!-- Hack: display ASCII printable character(s)  -->
                         <td id="resultB">?</td>
                         <td id="resultA">?</td>
