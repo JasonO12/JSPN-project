@@ -117,6 +117,14 @@ def addbinary():
 
     return render_template("MiniLabs/addbinary.html", BITS=8)
 
+@app.route('/journals/')
+def journals():
+    return render_template("MiniLabs/journals.html")
+
+# @app.route('/colorcode/')
+# def colorcode():
+#     return render_template("MiniLabs/colorcode.html")
+
 
 # runs the application on the development server
 @app.route('/hawkers/', methods=['GET', 'POST'])
@@ -135,5 +143,8 @@ def hawkers():
 def logicgate():
     return render_template("Other/logicgate.html")
 
+@app.route('/colorcode')
+def colorcode():
+    return render_template("layouts/colorcode.html")
 if __name__ == "__main__":
     app.run(debug=True)

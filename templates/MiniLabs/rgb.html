@@ -9,6 +9,7 @@
         //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
         var color = {{ colored|safe }}
         var gray = {{ grayed|safe }}
+        {#var blur = {{ blurred|safe }}#}
         var imageType = 0;
 
         function grayscale(array) {
@@ -28,6 +29,23 @@
             }
         }
 
+        {#function blurring(array) {#}
+        {#    for (var i = 1; i <= array.length; i++) {#}
+        {#        let id = "img" + i;#}
+        {#        setImg(id, array[i-1]);#}
+        {#    }#}
+        {#}#}
+        {##}
+        {#function toggleblur() {#}
+        {#    if (imageType === 0) {#}
+        {#        blurring(blur);#}
+        {#        imageType = 1;#}
+        {#    } else {#}
+        {#        blurring(0);#}
+        {#        imageType = 0;#}
+        {#    }#}
+        {#}#}
+
         function setImg(img, base64) {
             // add button and rotate image from original to gray and back (toggle)
             document.getElementById(img).src = base64;  //change img src to inner html on <p> tag
@@ -41,6 +59,7 @@
     <h1 class="text-center">RGB values within an Image</h1>
     <div class="container">
         <input type="button" value="toggle colors" onclick="toggle();">
+        <input type="button" value="toggle blur" onclick="toggleblur();">
         <div class="row justify-content-md-center">
             <table class="table">
                 <thead>
