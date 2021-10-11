@@ -141,7 +141,7 @@ def hawkers():
 
 @app.route('/logicgate/')
 def logicgate():
-    return render_template("Other/templates/MiniLabs/logicgate.html")
+    return render_template("MiniLabs/logicgate.html")
 
 @app.route('/colorcode')
 def colorcode():
