@@ -26,11 +26,6 @@ def walruses():
     return render_template("Other/walruses.html")
 
 
-@app.route('/hawkers/')
-def hawkers():
-    return render_template("Other/hawkers.html")
-
-
 @app.route('/stub/')
 def stub():
     return render_template("Other/stub.html")
@@ -71,6 +66,7 @@ def jason():
             return render_template("AboutUs/Jason.html", nickname=name)
     return render_template("AboutUs/Jason.html", nickname="World")
 
+
 @app.route('/greet', methods=['GET', 'POST'])
 def greet():
     if request.form:
@@ -78,6 +74,7 @@ def greet():
         if len(name) != 0:
             return render_template("MiniLabs/greet.html", nickname=name)
     return render_template("MiniLabs/greet.html", nickname="World")
+
 
 @app.route('/designs/')
 def designs():
@@ -93,9 +90,11 @@ def binary():
 
     return render_template("MiniLabs/binary.html", BITS=8)
 
+
 @app.route('/login/')
 def login():
     return render_template("layouts/login.html")
+
 
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
@@ -107,6 +106,8 @@ def rgb():
         gray.append(img['base64_GRAY'])
 
     return render_template('MiniLabs/rgb.html', images=image_data(path), colored=color, grayed=gray)
+
+
 @app.route('/addbinary/', methods=['GET', 'POST'])
 def addbinary():
     if request.form:
@@ -118,5 +119,21 @@ def addbinary():
 
 
 # runs the application on the development server
+@app.route('/hawkers/', methods=['GET', 'POST'])
+def hawkers():
+    if request.form:
+        value1 = request.form.get("value1")
+        value2 = request.form.get("value2")
+        if int(value1) == 1:
+            return render_template("Other/hawkers.html", output=int(value1))
+        if int(value2) == 1:
+            return render_template("Other/hawkers.html", output=int(value2))
+        return render_template("Other/hawkers.html", output=0)
+    return render_template("Other/hawkers.html")
+
+@app.route('/logicgate/')
+def logicgate():
+    return render_template("Other/logicgate.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
