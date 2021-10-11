@@ -26,6 +26,17 @@ JSPN Project P5
 | Paul DiPasquale       | [@Paul-D6](https://github.com/Paul-D6)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)      | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=Paul-D6)    | [Jason and Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing)      |
 | Somaditya Singh        | [@somaditya1](https://github.com/somaditya1)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)    | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=somaditya1)    | [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing)     |
 
+## Week 7
+
+### Binary Math Extensions
+| Name | Requirment | Evidence | Grade |
+| --- | ---        | ---      | --- |
+| Jason | Extend/Switch ASCII  to Unicode.   Use representation of U-0000 to U-FFFF for your bits.  The extension of ASCII to Unicode mode allows you to show even more Characters and Character ranges.  Look at Unicode on Wikipedia. Help with signed/unsigned addition when complete. | |Grade |
+| Nic  | Multiply and Divide by 2 (Shift).  In this example, make the Bits change positions.  Start 2^0 to 2^15.  If you multiply by 2 then 2^0 bit becomes 2^1, 2^1 to 2^2.  If you divide 2^15 becomes 2^14. Logic Gates.  CB requires an understanding of Expressions.  These are routed in Logic Gates (as language is routed in Latin). Consider an entirely different presentation area and idea.  In this example, you may have two inputs (a,b) and see how changing those inputs changes logic gate outputs (c).  This will likely require a different HTML.| |Grade |
+| Paul | Unsigned Addition, Subtraction (Default).  Whole Numbers. Max number move from 255 to 65535.  Essentially 8 bits to 16 bits.  16 bits is often called a "Short Integer". Signed Addition, Subtraction (Selection).  Integer Numbers.  Subtraction (8th bit is a Sign, max number is  +127 and negative -128, overflow now produces negative number.  If sign bit is set the calculation is 128-bits. | | Grade|
+| Soma | Color Codes.  Display three rows of 8 bits.  Allow for code to be 0 to 255, show color for RGB.  Also, show color for R,G,B independently.  This may require a different HTML layout. | | Grade |
+
+
 ## Week 6
 
 ### RGB Team/Individual Scoring
