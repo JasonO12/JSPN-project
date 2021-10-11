@@ -9,6 +9,7 @@
 </head>
 <body>
 <style>
+
     * {
         box-sizing: border-box;
     }
@@ -18,7 +19,7 @@
         float: left;
         width:100%;
         padding: 10px;
-        height: 800px; /* Should be removed. Only for demonstration */
+        height: 800px;
     }
     /* Clear floats after the columns */
     .row:after {
@@ -36,10 +37,18 @@
         border: 1px solid #dddddd;
         text-align: left;
         padding: 8px;
+        background-image: url("https://image.shutterstock.com/image-illustration/multicore-processor-on-integrated-circuit-260nw-1049602916.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
 
     tr:nth-child(even) {
-        background-color: #dddddd;
+        background-color: #1c76c0;
+    }
+    body{
+        background-color: #1c8fc0;
+
     }
 </style>
 <h1>Logic Gates</h1>
@@ -54,7 +63,7 @@
         </tr>
         <tr>
             <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/OR_ANSI_Labelled.svg/180px-OR_ANSI_Labelled.svg.png" alt=""></td>
-            <td>OR Gate</td>
+            <td><p style="color:white;">OR Gate</p></td>
             <td>
                 <select class="ip1" id="input1">
                     <option value="0">0</option>
@@ -90,7 +99,7 @@
         </tr>
         <tr>
             <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/AND_ANSI_Labelled.svg/180px-AND_ANSI_Labelled.svg.png" alt=""></td>
-            <td>AND Gate</td>
+            <td><p style="color:white;">AND Gate</p></td>
             <td>
                 <select class="ip1" id="andinput1">
                     <option value="0">0</option>
@@ -127,7 +136,7 @@
         </tr>
         <tr>
             <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/NOR_ANSI_Labelled.svg/180px-NOR_ANSI_Labelled.svg.png" alt=""></td>
-            <td>NOR Gate</td>
+            <td><p style="color:white;">NOR Gate</p></td>
             <td>
             <select class="ip1" id="norinput1">
                 <option value="0">0</option>
@@ -164,7 +173,7 @@
         </tr>
         <tr>
             <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/NAND_ANSI_Labelled.svg/180px-NAND_ANSI_Labelled.svg.png" alt=""></td>
-            <td>NAND Gate</td>
+            <td><p style="color:white;">NAND Gate</p></td>
             <td>
             <select class="ip1" id="nandinput1">
                 <option value="0">0</option>
@@ -201,7 +210,7 @@
         </tr>
         <tr>
             <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/XOR_ANSI_Labelled.svg/180px-XOR_ANSI_Labelled.svg.png" alt=""></td>
-            <td>XOR Gate</td>
+            <td><p style="color:white;">XOR Gate</p></td>
             <td>
             <select class="ip1" id="xorinput1">
                 <option value="0">0</option>
@@ -238,7 +247,7 @@
         </tr>
         <tr>
             <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/NOT_ANSI_Labelled.svg/180px-NOT_ANSI_Labelled.svg.png" alt=""></td>
-            <td>NOT Gate</td>
+            <td><p style="color:white;">NOT Gate</p></td>
             <td>
             <select class="ip1" id="notinput1">
                 <option value="0">0</option>
@@ -264,7 +273,7 @@
                     switch(notg)
                     {
                         case "not":
-                            outputNOT = !(noti1 | noti2);
+                            outputNOT = !(noti1 | noti2) ? '1' : '0';
                             break;
                     }
 
