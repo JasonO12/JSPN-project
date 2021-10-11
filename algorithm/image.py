@@ -29,18 +29,6 @@ def image_data(path=Path("static/assets/"), img_list=None):  # path of static im
 
         ]
 
-    # for img_dict in img_list:
-    #     file = path / img_dict['file']  # file with path for local access (backend)
-    #     processing = img_dict['processing']
-    #     # Python Image Library operations
-    #     if processing == "gaussian":
-    #         # GAUSSIAN BLUR IMAGE OPERATION
-    #         origImage = Image.open(file)
-    #         gaussImage = origImage.filter(ImageFilter.GaussianBlur(5))
-    #         gaussImage.save("static/assets/gaussian/" + img_dict['file'])
-    #         gaussFile = "static/assets/gaussian/" + img_dict['file']
-    #         img_reference = Image.open(gaussFile)
-
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
         file = path / img_dict['file']  # file with path for local access (backend)
@@ -129,6 +117,7 @@ if __name__ == "__main__":
         draw.text((0, 0), "Size is {0} X {1}".format(*row['size']))  # draw in image
         image_ref.show()
 print()
+
 # function containDuplicates(array) {
 #     for (let i = 0; i < array.length; i++) {
 #         for (let r = 0; r < array.length; r++) {
@@ -142,3 +131,15 @@ print()
 # }
 # return false;
 # }
+
+# for img_dict in img_list:
+#     file = path / img_dict['file']  # file with path for local access (backend)
+#     processing = img_dict['processing']
+#     # Python Image Library operations
+#     if processing == "gaussian":
+#         # GAUSSIAN BLUR IMAGE OPERATION
+#         origImage = Image.open(file)
+#         gaussImage = origImage.filter(ImageFilter.GaussianBlur(5))
+#         gaussImage.save("static/assets/gaussian/" + img_dict['file'])
+#         gaussFile = "static/assets/gaussian/" + img_dict['file']
+#         img_reference = Image.open(gaussFile)
