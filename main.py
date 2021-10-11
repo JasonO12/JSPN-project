@@ -133,7 +133,7 @@ def hawkers():
 
 @app.route('/logicgate/')
 def logicgate():
-    return render_template("Other/logicgate.html")
+    return render_template("Other/templates/MiniLabs/logicgate.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
