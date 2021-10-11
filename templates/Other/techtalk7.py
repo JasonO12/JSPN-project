@@ -9,7 +9,7 @@ print(student_list[2:5])
 print(student_list[:-5])
 
 # print elements 6th to end (index 5)
-print(student_list[:5])
+print(student_list[5:7])
 
 # print elements beginning to end
 print(student_list[1:7])

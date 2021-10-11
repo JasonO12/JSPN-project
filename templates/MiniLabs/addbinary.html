@@ -35,7 +35,7 @@
             return [bitsR1, bitsR2];
         }
 
-        function add() {
+        function Unsigned() {
             let bitsR1R2 = getBits();
             let bitsR1 = bitsR1R2[0];
             let bitsR2 = bitsR1R2[1];
@@ -47,6 +47,40 @@
             {#document.getElementById('resultB').innerHTML = text;#}
 
         }
+        function signedAddition () {
+            let bitsR1R2 = getBits();
+            let bitsR1 = bitsR1R2[0];
+            let bitsR2 = bitsR1R2[1];
+            var num1 = 0;
+            var num2 = 0;
+            var output = 0;
+            const firstBitOne = document.getElementById('o1');
+            const firstBitTwo = document.getElementById('t1');
+            for (var i = 2; i <= 8; i++) {
+                let element1 = document.getElementById('o' + i);
+                num1 += Math.pow(2, 8 - i) * parseInt(element1.innerHTML);
+            }
+            for (var i = 2; i <= 8; i++) {
+                let element2 = document.getElementById('t' + i);
+                num2 += Math.pow(2, 8 - i) * parseInt(element2.innerHTML);
+            }
+            if (firstBitOne.innerHTML === "1") {
+                num1 = 0-num1;
+            }
+            else {
+                num1 = num1;
+            }
+            if (firstBitTwo.innerHTML === "1") {
+                num2 = 0-num2;
+            }
+            else {
+                num2 = num2;
+            }
+            output = num1 + num2
+            var resultA = output.toString();
+            document.getElementById('resultA').innerHTML = resultA;
+
+        }
     </script>
 {% endblock %}
 
@@ -56,16 +90,18 @@
     <div class="container">
         <div class="row justify-content-md-center">
 
-            <div class="col-2">
+            <div class="col-3">
                 <table class="table">
                     <tr id="table">
                         <th>Addition</th>
                         <th>Sum</th>
+                        <th>Signed Sum</th>
                     </tr>
                     <tr>
                         <td><button type="button" id="add" onclick="add()">(+)</button></td>
                         <!-- Hack: display ASCII printable character(s)  -->
                         <td id="resultB">?</td>
+                        <td id="resultA">?</td>
                     </tr>
                 </table>
             </div>
