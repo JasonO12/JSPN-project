@@ -63,7 +63,6 @@
                 let element1 = document.getElementById('digitR1' + i);
                 num1 += Math.pow(2, 7 - i) * parseInt(element1.value);
             }
-            alert(num1);
             const firstBitTwo = document.getElementById('digitR20');
             for (i = 1; i < 8; i++) {
                 let element2 = document.getElementById('digitR2' + i);
@@ -78,7 +77,7 @@
             }
 
             output = num1 + num2
-            const resultA = output.toString();
+            const resultA = output.toString(2);
             document.getElementById('resultA').innerHTML = resultA;
 
         }
