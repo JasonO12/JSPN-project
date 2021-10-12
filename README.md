@@ -31,11 +31,14 @@ JSPN Project P5
 ### Binary Math Extensions
 | Name | Requirment | Evidence | Grade |
 | --- | ---        | ---      | --- |
-| Jason | Extend/Switch ASCII  to Unicode.   Use representation of U-0000 to U-FFFF for your bits.  The extension of ASCII to Unicode mode allows you to show even more Characters and Character ranges.  Look at Unicode on Wikipedia. Help with signed/unsigned addition when complete. | |Grade |
-| Nic  | Multiply and Divide by 2 (Shift).  In this example, make the Bits change positions.  Start 2^0 to 2^15.  If you multiply by 2 then 2^0 bit becomes 2^1, 2^1 to 2^2.  If you divide 2^15 becomes 2^14. Logic Gates.  CB requires an understanding of Expressions.  These are routed in Logic Gates (as language is routed in Latin). Consider an entirely different presentation area and idea.  In this example, you may have two inputs (a,b) and see how changing those inputs changes logic gate outputs (c).  This will likely require a different HTML.| |Grade |
-| Paul | Unsigned Addition, Subtraction (Default).  Whole Numbers. Max number move from 255 to 65535.  Essentially 8 bits to 16 bits.  16 bits is often called a "Short Integer". Signed Addition, Subtraction (Selection).  Integer Numbers.  Subtraction (8th bit is a Sign, max number is  +127 and negative -128, overflow now produces negative number.  If sign bit is set the calculation is 128-bits. | | Grade|
-| Soma | Color Codes.  Display three rows of 8 bits.  Allow for code to be 0 to 255, show color for RGB.  Also, show color for R,G,B independently.  This may require a different HTML layout. | | Grade |
+| Jason | Extend/Switch ASCII to Unicode in binary.html. Help with signed/unsigned addition when complete. | [Ticke](https://github.com/JasonO12/JSPN-project/issues/36) for unicode implementation, [commit](https://github.com/JasonO12/JSPN-project/commit/4f70b434827989ca3dc9217ed29332990eb796be) to unsigned addition fix, [commit](https://github.com/JasonO12/JSPN-project/commit/1a3fe1cd7f45b2f5ce5a51feb150aeb01551b571) to color code link |Grade |
+| Nic  | Multiply and Divide by 2 (Shift) in Binary Math MiniLab, implement Logic Gates MiniLab. | [Ticket](https://github.com/JasonO12/JSPN-project/issues/35) for binary division/multiplication, [Ticket](https://github.com/JasonO12/JSPN-project/issues/39) to logic gates |Grade |
+| Paul | Unsigned Addition, Subtraction (Default). Signed Addition, Subtraction (Selection). Both as its own MiniLab. | [Ticket](https://github.com/JasonO12/JSPN-project/issues/38) for unsigned addition, [Ticket](https://github.com/JasonO12/JSPN-project/issues/40) for signed addition | Grade|
+| Soma | Color Codes.  Display three rows of 8 bits.  Allow for code to be 0 to 255, show color for RGB.  Also, show color for R,G,B independently. | [Ticket](https://github.com/JasonO12/JSPN-project/issues/37) for color codes | Grade |
 
+#### [Jason/Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing) for 3.5 and 3.6 notes/quizzes
+#### [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing) for 3.5 and 3.6 notes/quizzes
+#### [Week 7 Video Journal](https://www.youtube.com/watch?v=9BO1hI6gjsI)
 
 ## Week 6
 
