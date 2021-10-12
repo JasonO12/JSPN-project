@@ -4,6 +4,8 @@ JSPN Project P5
 ## Table Of Contents
 
   - [Project Credits](https://github.com/JasonO12/JSPN-project#jspn-project-credits)
+  - [Week 7](https://github.com/JasonO12/JSPN-project#week-7)
+  - [Week 6](https://github.com/JasonO12/JSPN-project#week-6)
   - [Week 5](https://github.com/JasonO12/JSPN-project#week-5)
   - [Week 4](https://github.com/JasonO12/JSPN-project#week-4)
   - [Week 3](https://github.com/JasonO12/JSPN-project#week-3)
@@ -13,8 +15,7 @@ JSPN Project P5
 
 ## JSPN Project Credits
 
-### [Flask Portfolio Original Project](https://portfolio.nighthawkcodingsociety.com/)
-### Runtime Link
+### [Runtime Link](https://portfolio.nighthawkcodingsociety.com/)
 
 |[JSPN Scrum Board](https://github.com/JasonO12/JSPN-project/projects/1)|[Insight Graphs](https://github.com/JasonO12/JSPN-project/graphs/contributors)|
 | :---   | :--- |
