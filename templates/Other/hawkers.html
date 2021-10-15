@@ -1,27 +1,169 @@
-<!-- Extending the project layout, as this file will do minor customizations -->
-{% extends "layouts/project.html" %}
+<!DOCTYPE html>
 
-<!-- Setting up variables to customize "project" details to be specific to hawkers -->
-{% set project = "Hawkers" %}
-{% set overview = "https://hawkers.nighthawkcodingsociety.com/aboutus" %}
-{% set scrumboard = "https://github.com/noyah81/p2ducks/projects/1" %}
-{% set repo = "https://github.com/noyah81/p2ducks" %}
-{% set authors = "https://nighthawkcodingsociety.com/projectsearch/details/Hawkers%20Tweet" %}
-
-<!-- Setting up a block replacement to customize background to BIRDS -->
-{% block background %}
-    <script src="{{ url_for('static', filename='three.r119.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='vanta.net.min.js') }}"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Gates</title>
     <script>
-        VANTA.NET({
-            el: "body",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00
-        })
+        var input1 = (1)
+        var input2 = (2)
+        function check() {
+            if (document.getElementById("input1").checked === true) {
+                input1 === (1)
+            }
+            if (document.getElementById("input2").checked === true) {
+                input2 === (1)
+            }
+        }
     </script>
-{% endblock %}
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column1 {
+            float: right;
+            width:33%;
+            padding: 10px;
+            height: 800px; /* Should be removed. Only for demonstration */
+        }
+        .column2 {
+            float: left;
+            width:66%;
+            padding: 10px;
+            height: 800px; /* Should be removed. Only for demonstration */
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Logic Gates</h1>
+<div class="row">
+    <div class="column1" style="background-color:#aaa;">
+        <h2>Inputs</h2>
+        <form action="/hawkers/" id="output" method="POST" style="text-align: center">
+            <label for="value1">Input 1</label>
+            <select class="ip1" id="input1">
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+            <label for="value2">Input 2</label>
+            <select class="ip2" id="input2">
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+            <button class="btn" onclick="Output()">O/P</button>
+        </form>
+    </div>
+    <div class="column2" style="background-color:#bbb;">
+        <h2>Logic Gates</h2>
+        <table>
+            <tr>
+                <th>Symbol</th>
+                <th>Logic Gate</th>
+                <th>Output</th>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/OR_ANSI_Labelled.svg/180px-OR_ANSI_Labelled.svg.png" alt=""></td>
+                <td>OR Gate</td>
+                <td>
+                    <script>
+                        function Output()
+                        {
+                            var i1 = document.getElementById("input1").value;
+                            var i2 = document.getElementById("input2").value;
+                            var org = "or"
+                            var outputOR;
+
+                            switch(org)
+                            {
+                                case "or":
+                                    outputOR = (i1 | i2);
+                                    break;
+                            }
+                            document.getElementById("output").value = outputOR;
+                        }
+                    </script>
+                    <p>{{ output }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/AND_ANSI_Labelled.svg/180px-AND_ANSI_Labelled.svg.png" alt=""></td>
+                <td>AND Gate</td>
+                <td>
+                    <script>
+
+                    </script>
+
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/NOR_ANSI_Labelled.svg/180px-NOR_ANSI_Labelled.svg.png" alt=""></td>
+                <td>NOR Gate</td>
+                <td>
+                    <script>
+
+                    </script>
+
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/NAND_ANSI_Labelled.svg/180px-NAND_ANSI_Labelled.svg.png" alt=""></td>
+                <td>NAND Gate</td>
+                <td>
+                    <script>
+
+                    </script>
+
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/XOR_ANSI_Labelled.svg/180px-XOR_ANSI_Labelled.svg.png" alt=""></td>
+                <td>XOR Gate</td>
+                <td>
+                    <script>
+
+                    </script>
+
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/NOT_ANSI_Labelled.svg/180px-NOT_ANSI_Labelled.svg.png" alt=""></td>
+                <td>NOT Gate</td>
+                <td>
+                    <script>
+
+                    </script>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+

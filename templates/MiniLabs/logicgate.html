@@ -235,10 +235,12 @@
                     switch(xorg)
                     {
                         case "xor":
-                            outputXOR = ((xori1 & !xori2) | (!xori1 & xori2)) ? '1' : '0';
+                            outputXOR = ((xori1 | !xori2) | (!xori1 | xori2)) ? '1' : '0';
                             break;
                     }
-
+                    if (xori1 === 1 && xori2 === 1){
+                        outputXOR = 0
+                }
                     document.getElementById("output4").value = outputXOR;
                 }
             </script>

@@ -146,5 +146,28 @@ def logicgate():
 @app.route('/colorcode')
 def colorcode():
     return render_template("layouts/colorcode.html")
+
+#@app_starter.route('/joke', methods=['GET', 'POST'])
+#def joke():
+#    """
+ #   # use this url to test on and make modification on you own machine
+  #  url = "http://127.0.0.1:5222/api/joke"
+   # """
+    #url = "https://csp.nighthawkcodingsociety.com/api/joke"
+    #response = requests.request("GET", url)
+    #return render_template("other/joke.html", joke=response.json())
+
+
+#@app_starter.route('/jokes', methods=['GET', 'POST'])
+#def jokes():
+ #   """
+  #  # use this url to test on and make modification on you own machine
+   # url = "http://127.0.0.1:5222/api/jokes"
+    #"""
+    #url = "https://csp.nighthawkcodingsociety.com/api/jokes"
+
+    #response = requests.request("GET", url)
+    #return render_template("Other/jokes.html", jokes=response.json())
+
 if __name__ == "__main__":
     app.run(debug=True)

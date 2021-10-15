@@ -7,32 +7,100 @@
 {% block body %}
     <head>
         <style>
+            .blood {
+                color:silver;
+                text-shadow:
+                        4px 4px 1px #300000,
+                        4px 6px 1px #400000,
+                        4px 8px 1px #500000,
+                        4px 10px 1px #600000,
+                        4px 12px 1px #700000,
+                        4px 14px 1px #800000,
+                        4px 16px 1px #900000,
+                        4px 18px 1px #A00000,
+                        4px 20px 1px #B00000,
+                        4px 22px 1px #C00000,
+                        4px 24px 1px #D00000,
+                        4px 26px 1px #E00000,
+                        4px 28px 1px #F00000,
+                        4px 30px 1px #FA0000,
+                        4px 32px 1px #FB0000,
+                        4px 34px 1px #FC0000,
+                        4px 36px 1px #FD0000,
+                        4px 38px 1px #FE0000,
+                        4px 40px 2px #FF0000;
+            }
+
             table {
                 border-spacing: 100px;
+            }
+            .button {
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            .button1 {
+                background-color: #4CAF50;
+                width: 33%;
+            }
+            .button1:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            .button2 {background-color: #008CBA; width: 33%;}
+            .button2:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            .button3 {background-color: #d30505; width: 33%;}
+            .button3:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
             }
         </style>
     </head>
     <body style="background-color:darkorange;">
     <div class="w3-container">
 
-    <h2>Best selling Video Games</h2>
+    <h2>Video Games and Ratings</h2>
 
     </div>
     <table style= "width:100%" >
         <tr>
+            <form method="get" action="/greet">
+                <button class="button button2">Add Ratings</button>
+            </form>
             <td><img src="https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png" width="200"></td>
             <td><img src="http://assets.stickpng.com/images/5b43b818e99939b4572e32ab.png" width="200"></td>
             <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/1280px-Valorant_logo_-_pink_color_version.svg.png" width="200"></td>
         </tr>
         <tr>
+            <form method="get" action="/greet">
+                <button class="button button1">Home</button>
+            </form>
             <td><img src="" width="300"></td>
             <td><img src="" width="300"></td>
             <td><img src="" width="300"></td>
         </tr>
         <tr>
+            <form method="get" action="/greet">
+                <button class="button button3">Platforms/Graphic Settings</button>
+            </form>
             <td><img src="" width="300"></td>
             <td><img src="" width="300"></td>
             <td><img src="" width="300"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <a href="/greet"><img src="https://s.yimg.com/os/creatr-uploaded-images/2020-09/778b5750-024d-11eb-b57b-bac920704c77" alt="" style="width:30%;height:30%;"></a>
+                <h2 class="blood">Horror Games</h2>
+            </td>
         </tr>
     </table>
     </body>

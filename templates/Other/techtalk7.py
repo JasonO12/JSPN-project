@@ -12,7 +12,7 @@ print(student_list[:-5])
 print(student_list[5:7])
 
 # print elements beginning to end
-print(student_list[1:7])
+print(student_list[0:7])
 
 # check if rob is in the student_list
 
