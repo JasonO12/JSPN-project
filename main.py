@@ -78,7 +78,7 @@ def greet():
 
 @app.route('/designs/')
 def designs():
-    return render_template("MiniLabs/designs.html")
+    return render_template("layouts/designs.html")
 
 
 @app.route('/binary/', methods=['GET', 'POST'])
@@ -146,6 +146,10 @@ def logicgate():
 @app.route('/colorcode')
 def colorcode():
     return render_template("layouts/colorcode.html")
+
+@app.route('/minecraft')
+def minecraft():
+    return render_template("ForWebPage/minecraft.html")
 
 #@app_starter.route('/joke', methods=['GET', 'POST'])
 #def joke():
