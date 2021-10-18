@@ -7,6 +7,40 @@
 {% block body %}
     <head>
         <style>
+
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Create two equal columns that floats next to each other */
+            .column2 {
+                float: left;
+                width:100%;
+                padding: 10px;
+                height: 800px;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
             .comp {
                 color:black;
                 font-family: "Courier New", serif;
@@ -70,52 +104,23 @@
                 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
             }
         </style>
+        <h1 class="blood">Dead by Daylight</h1>
     </head>
-    <body style="background-color:darkorange;">
-    <div class="w3-container">
-
-    <h2>Video Games and Ratings</h2>
-
-    </div>
-    <table style= "width:100%" >
-        <tr>
-            <form method="get" action="/ratings">
-                <button class="button button2">Add Ratings</button>
-            </form>
-            <td><img src="https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png" width="200"></td>
-            <td><img src="http://assets.stickpng.com/images/5b43b818e99939b4572e32ab.png" width="200"></td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/1280px-Valorant_logo_-_pink_color_version.svg.png" width="200"></td>
-        </tr>
-        <tr>
-            <form method="get" action="/greet">
-                <button class="button button1">Home</button>
-            </form>
-            <td><img src="" width="300"></td>
-            <td><img src="" width="300"></td>
-            <td><img src="" width="300"></td>
-        </tr>
-        <tr>
-            <form method="get" action="/greet">
-                <button class="button button3">Platforms/Graphic Settings</button>
-            </form>
-            <td><img src="" width="300"></td>
-            <td><img src="" width="300"></td>
-            <td><img src="" width="300"></td>
-        </tr>
-    </table>
+    <body>
     <table>
         <tr>
+            <th>Picture</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><img src="https://s.yimg.com/os/creatr-uploaded-images/2020-09/778b5750-024d-11eb-b57b-bac920704c77" alt="" style="width:50%;height:50%;"></td>
+            <td><p style="color:white;">$19.99</p></td>
             <td>
-                <a href="/horror"><img src="https://s.yimg.com/os/creatr-uploaded-images/2020-09/778b5750-024d-11eb-b57b-bac920704c77" alt="" style="width:30%;height:30%;"></a>
-                <h2 class="blood">Horror Games</h2>
-            </td>
-            <td>
-                <a href="/party"><img src="https://www.nintendo.com//content/dam/noa/en_US/games/switch/f/fall-guys-ultimate-knockout-switch/fall-guys-ultimate-knockout-switch-hero.jpg" alt="" style="width:30%;height:30%;"></a>
-                <h2 class="party">Party Games</h2>
-            </td>
-            <td>
-                <a href="/comp"><img src="https://cdn.dribbble.com/users/2348/screenshots/10696082/media/4a24583ea649f9df1415775a37c84ae5.png?compress=1&resize=400x300" alt="" style="width:70%;height:70%;"></a>
-                <h2 class="comp">Competitive Games</h2>
+                <p>"Dead by Daylight is an asymmetrical multiplayer horror game where one
+                    player takes on the role of a brutal Killer and the other four play as
+                    Survivors. As a Killer, your goal is to sacrifice as many Survivors as possible.
+                    As a Survivor, your goal is to escape and avoid being caught and killed."</p>
             </td>
         </tr>
     </table>

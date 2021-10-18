@@ -78,8 +78,19 @@ def greet():
 
 @app.route('/designs/')
 def designs():
-    return render_template("MiniLabs/designs.html")
+    return render_template("layouts/designs.html")
 
+@app.route('/ratings/')
+def ratings():
+    return render_template("ForWebPage/ratings.html")
+
+@app.route('/dbd/')
+def dbd():
+    return render_template("ForWebPage/dbd.html")
+
+@app.route('/horror/')
+def horror():
+    return render_template("ForWebPage/horror.html")
 
 @app.route('/binary/', methods=['GET', 'POST'])
 def binary():
