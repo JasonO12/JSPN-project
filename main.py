@@ -147,10 +147,6 @@ def logicgate():
 def colorcode():
     return render_template("layouts/colorcode.html")
 
-@app.route('/horrorgames')
-def horrorgames():
-    return render_template("other/horrorgames.html")
-
 #@app_starter.route('/joke', methods=['GET', 'POST'])
 #def joke():
 #    """

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+<html lang="en">
+<meta charset="UTF-8">
+<title>Greeting</title>
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <div class="col-12">
+        <p>Hello, {{nickname}}!</p>
+    </div>
+    <div class="col-12">
+        <form action="/greet" id="greet" method="POST" >
+            <label for="name">Type a greeting name?</label>
+            <input name="name" id="name">
+            <input type="submit" value="Greetings!">
+        </form>
+    </div>
+{% endblock %}
+<h1 class="text-center">Minecraft</h1>
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
+
+</html>
