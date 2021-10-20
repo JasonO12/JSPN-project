@@ -2,8 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Logic Gates</title>
+    <title>WebPage</title>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
+
+    <script>
+        function gamepicks()
+        {
+            const gamelist = ["Valorant", "Overwatch", "Forza", "Fortnite", "Rainbow Six Siege", "League of Legends"];
+            const resultA = document.getElementById("input1").value;
+            const resultB = document.getElementById("input2").value;
+
+            if (resultA === "3") {
+                alert("Error: choose game platform");
+            }
+            else if (resultB === "3") {
+                alert("Error: Choose a game type");
+            } else {
+                {#alert("A: " + resultA + "B: " + resultB);#}
+                if (resultA === "0" && resultB === "0") {
+                    alert(gamelist[2]);
+                }
+                else if(resultA === "0" && resultB === "1") {
+                    alert(gamelist[2]);
+                }
+                else if(resultA === "0" && resultB === "2") {
+                    alert(gamelist[2]);
+                }
+                else if(resultA === "1" && resultB === "0") {
+                    alert(gamelist[2]);
+                }
+                else if(resultA === "1" && resultB === "1") {
+                    alert(gamelist[2]);
+                }
+                else if(resultA === "1" && resultB === "2") {
+                    alert(gamelist[2]);
+                }
+                else if(resultA === "2" && resultB === "0") {
+                    alert(gamelist[2]);
+                }
+                else if(resultA === "2" && resultB === "1") {
+                    alert(gamelist[2]);
+                }
+                else if(resultA === "2" && resultB === "2") {
+                    alert(gamelist[4]);
+                }
+
+
+            }
+
+        }
+    </script>
 </head>
 <body>
 <style>
@@ -26,11 +74,12 @@
         clear: both;
     }
     table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
-
+    .space {
+        line-height: 400px;
+    }
     tr:nth-child(even) {
         background-color: mediumpurple;
     }
@@ -46,7 +95,7 @@
             <tr>
                 <th>Please input your platform and ideal game type</th>
             </tr>
-            <tr>
+            <tr class="space">
 
                 <td>
                     <select class="ip1" id="input1">
@@ -57,33 +106,14 @@
                     </select>
                     <select class="ip2" id="input2">
                         <option value="3"> </option>
-                        <option value="0">driving</option>
-                        <option value="1">shooting</option>
-                        <option value="2">strategy</option>
+                        <option value="0">Driving</option>
+                        <option value="1">Shooting</option>
+                        <option value="2">Strategy</option>
 
                     </select>
 
-                    <button class="btn" onclick="gamepicks()">Generate possible games</button>
-{#                    <input class="op" id="output">#}
-                    <script>
-                        function gamepicks()
-                        {
-                            var choice1 = document.getElementById("input1").value;
-                            var choice2 = document.getElementById("input2").value;
-                            output=choice1,choice2
-                            if output == 03()
-                                print( )
-                            else if output ==()
-                            else if output ==()
-                            switch(org)
-                            {
-                                case "or":
-                                    outputOR = (ori1 | ori2);
-                                    break;
-                            }
-                            document.getElementById("output").value = outputOR;
-                        }
-                    </script>
+                    <button onclick="gamepicks()">Generate games</button>
+
                 </td>
             </tr>
         </table>
