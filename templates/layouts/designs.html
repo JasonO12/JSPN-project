@@ -38,9 +38,15 @@
                         4px 38px 1px #FE0000,
                         4px 40px 2px #FF0000;
             }
-
-            table {
-                border-spacing: 100px;
+            .space {
+                float: left;
+                width: 33%;
+                padding: 20px;
+            }
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
             }
             .button {
                 border: none;
@@ -56,17 +62,21 @@
 
             .button1 {
                 background-color: #4CAF50;
-                width: 33%;
+                width: 24%;
             }
             .button1:hover {
                 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
             }
-            .button2 {background-color: #008CBA; width: 33%;}
+            .button2 {background-color: #008CBA; width: 24%;}
             .button2:hover {
                 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
             }
-            .button3 {background-color: #d30505; width: 33%;}
+            .button3 {background-color: #d30505; width: 24%;}
             .button3:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            .button4 {background-color: mediumpurple; width: 24%;}
+            .button4:hover {
                 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
             }
         </style>
@@ -79,46 +89,90 @@
     </div>
     <table style= "width:100%" >
         <tr>
+            <form method="get" action="/designs">
+                <button class="button button1">Home</button>
+            </form>
+        </tr>
+        <tr>
             <form method="get" action="/ratings">
                 <button class="button button2">Add Ratings</button>
             </form>
-            <td><img src="https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png" width="200"></td>
-            <td><img src="http://assets.stickpng.com/images/5b43b818e99939b4572e32ab.png" width="200"></td>
-            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/1280px-Valorant_logo_-_pink_color_version.svg.png" width="200"></td>
-        </tr>
-        <tr>
-            <form method="get" action="/greet">
-                <button class="button button1">Home</button>
-            </form>
-            <td><img src="" width="300"></td>
-            <td><img src="" width="300"></td>
-            <td><img src="" width="300"></td>
         </tr>
         <tr>
             <form method="get" action="/greet">
                 <button class="button button3">Platforms/Graphic Settings</button>
             </form>
-            <td><img src="" width="300"></td>
-            <td><img src="" width="300"></td>
-            <td><img src="" width="300"></td>
         </tr>
-    </table>
-    <table>
         <tr>
-            <td>
-                <a href="/horror"><img src="https://s.yimg.com/os/creatr-uploaded-images/2020-09/778b5750-024d-11eb-b57b-bac920704c77" alt="" style="width:30%;height:30%;"></a>
-                <h2 class="blood">Horror Games</h2>
-            </td>
-            <td>
-                <a href="/party"><img src="https://www.nintendo.com//content/dam/noa/en_US/games/switch/f/fall-guys-ultimate-knockout-switch/fall-guys-ultimate-knockout-switch-hero.jpg" alt="" style="width:30%;height:30%;"></a>
-                <h2 class="party">Party Games</h2>
-            </td>
-            <td>
-                <a href="/comp"><img src="https://cdn.dribbble.com/users/2348/screenshots/10696082/media/4a24583ea649f9df1415775a37c84ae5.png?compress=1&resize=400x300" alt="" style="width:70%;height:70%;"></a>
-                <h2 class="comp">Competitive Games</h2>
-            </td>
+            <form method="get" action="/gamefinder">
+                <button class="button button4">Find Games For You</button>
+            </form>
         </tr>
     </table>
+    <div class="row">
+        <div class="space">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png" width="200" class="space" style="width:64%">
+        </div>
+        <div class="space">
+            <img src="http://assets.stickpng.com/thumbs/5b43b818e99939b4572e32ab.png" style="width:65%">
+        </div>
+        <div class="space">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/1280px-Valorant_logo_-_pink_color_version.svg.png" style="width:65%">
+        </div>
+    </div>
+    <div class="row">
+        <div class="space">
+            <img src="https://logos-world.net/wp-content/uploads/2021/02/Dead-by-Daylight-Logo-2016-2021.png" width="200" class="space" style="width:80%">
+        </div>
+        <div class="space">
+            <img src="https://1000logos.net/wp-content/uploads/2018/03/Overwatch-Logo.png" style="width:65%">
+        </div>
+        <div class="space">
+            <img src="https://www.freepnglogos.com/uploads/gta-5-logo-png/grand-theft-auto-v-1.png" style="width:62%">
+        </div>
+    </div>
+{#    <table style= "width:100%" >#}
+{#        <tr>#}
+{#            <form method="get" action="/ratings">#}
+{#                <button class="button button2">Add Ratings</button>#}
+{#            </form>#}
+{#            <td><img src="https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png" width="200" class="space"></td>#}
+{#            <td><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.stickpng.com%2Fimg%2Fgames%2Ffortnite%2Ffortnite-battle-royale-logo&psig=AOvVaw2JFRA0KGmvm8Ulq_Z8Quw4&ust=1634778509354000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCID24NXm1_MCFQAAAAAdAAAAABAD" width="200" class="space"></td>#}
+{#            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/1280px-Valorant_logo_-_pink_color_version.svg.png" width="200" class="space"></td>#}
+{#        </tr>#}
+{#        <tr>#}
+{#            <form method="get" action="/designs">#}
+{#                <button class="button button1">Home</button>#}
+{#            </form>#}
+{#            <td><img src="" width="300"></td>#}
+{#            <td><img src="" width="300"></td>#}
+{#            <td><img src="" width="300"></td>#}
+{#        </tr>#}
+{#        <tr>#}
+{#            <form method="get" action="/greet">#}
+{#                <button class="button button3">Platforms/Graphic Settings</button>#}
+{#            </form>#}
+{#            <td><img src="" width="300"></td>#}
+{#            <td><img src="" width="300"></td>#}
+{#            <td><img src="" width="300"></td>#}
+{#        </tr>#}
+{#    </table>#}
+{#    <table>#}
+{#        <tr>#}
+{#            <td>#}
+{#                <a href="/horror"><img src="https://s.yimg.com/os/creatr-uploaded-images/2020-09/778b5750-024d-11eb-b57b-bac920704c77" alt="" style="width:30%;height:30%;" class="space"></a>#}
+{#                <h2 class="blood"></h2>#}
+{#            </td>#}
+{#            <td>#}
+{#                <a href="/party"><img src="https://freepngimg.com/save/27974-league-of-legends-logo-transparent-background/480x307" alt="" style="width:30%;height:30%;" class="space"></a>#}
+{#                <h2 class="party"></h2>#}
+{#            </td>#}
+{#            <td>#}
+{#                <a href="/comp"><img src="https://www.freepnglogos.com/uploads/gta-5-logo-png/grand-theft-auto-v-1.png" alt="" style="width:70%;height:70%;" class="space"></a>#}
+{#                <h2 class="comp"></h2>#}
+{#            </td>#}
+{#        </tr>#}
+{#    </table>#}
     </body>
 {% endblock %}
 
