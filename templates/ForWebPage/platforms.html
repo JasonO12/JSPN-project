@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Platform Identifier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
+
+    <script>
+        {#function platformpicks()#}
+        {#{#}
+        {#    var choicemain = document.getElementById("input1").value;#}
+
+    </script>
+
+</head>
+<body>
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column2 {
+        float: left;
+        width:100%;
+        padding: 10px;
+        height: 800px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    table {
+        {#font-family: arial, sans-serif;#}
+        {#border-collapse: collapse;#}
+        {#width: 100%;#}
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    tr:nth-child(even) {
+        background-color: #d30505;
+    }
+    body{
+        background-color: #d30505;
+
+    }
+</style>
+<div class="row">
+    <div style="background-color:#d30505">
+        <h1 style="text-align:center">Find A Gaming Platform</h1>
+        <table>
+            <tr>
+                <th>Please input your desired video game</th>
+            </tr>
+            <tr>
+
+                <td>
+                    <select class="ip2" id="input2">
+                        <option value="0">Minecraft</option>
+                        <option value="1">Fortnite</option>
+                        <option value="2">Valorant</option>
+                        <option value="3">Dead By Daylight</option>
+                        <option value="4">Overwatch</option>
+                        <option value="3">Grand Theft Auto V</option>
+                    </select>
+
+                    <button class="btn" onclick="platformpicks()">Generate possible platforms</button>
+                    {#                    <input class="op" id="output">#}
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

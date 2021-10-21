@@ -20,31 +20,31 @@
             } else {
                 {#alert("A: " + resultA + "B: " + resultB);#}
                 if (resultA === "0" && resultB === "0") {
-                    alert(gamelist[2]);
+                    document.getElementById("popcorn").innerHTML=gamelist[2];
                 }
                 else if(resultA === "0" && resultB === "1") {
-                    alert(gamelist[2]);
+                    document.getElementById("popcorn").innerHTML=gamelist[1,3];
                 }
                 else if(resultA === "0" && resultB === "2") {
-                    alert(gamelist[2]);
+                    document.getElementById("popcorn").innerHTML="No results found";
                 }
                 else if(resultA === "1" && resultB === "0") {
-                    alert(gamelist[2]);
+                    document.getElementById("popcorn").innerHTML=gamelist[2];
                 }
                 else if(resultA === "1" && resultB === "1") {
-                    alert(gamelist[2]);
+                    document.getElementById("popcorn").innerHTML=gamelist[1, 3];
                 }
                 else if(resultA === "1" && resultB === "2") {
-                    alert(gamelist[2]);
+                    document.getElementById("popcorn").innerHTML="No results found";
                 }
                 else if(resultA === "2" && resultB === "0") {
-                    alert(gamelist[2]);
+                    document.getElementById("popcorn").innerHTML=gamelist[2];
                 }
                 else if(resultA === "2" && resultB === "1") {
-                    alert(gamelist[2]);
+                    document.getElementById("popcorn").innerHTML=gamelist[0,3];
                 }
                 else if(resultA === "2" && resultB === "2") {
-                    alert(gamelist[4]);
+                    document.getElementById("popcorn").innerHTML=gamelist[4,5];
                 }
 
 
@@ -77,8 +77,17 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .extra {
+        font-size: x-large;
+    }
     .space {
         line-height: 400px;
+    }
+    .answer{
+        text-align: center;
+        font-size: xxx-large;
+        font-style: normal;
+        color: darkorange;
     }
     tr:nth-child(even) {
         background-color: mediumpurple;
@@ -93,18 +102,19 @@
         <h2>Find A Video Game</h2>
         <table>
             <tr>
-                <th>Please input your platform and ideal game type</th>
+                <th style="font-size: xx-large">Please input your platform and ideal game type</th>
             </tr>
-            <tr class="space">
+{#            class="ip1" in select; 1 to 2#}
+            <tr class="space" style="align-items: center">
 
                 <td>
-                    <select class="ip1" id="input1">
+                    <select id="input1" class="extra">
                         <option value="3"> </option>
                         <option value="0">Xbox</option>
                         <option value="1">Playstation</option>
                         <option value="2">PC</option>
                     </select>
-                    <select class="ip2" id="input2">
+                    <select id="input2" class="extra">
                         <option value="3"> </option>
                         <option value="0">Driving</option>
                         <option value="1">Shooting</option>
@@ -112,8 +122,13 @@
 
                     </select>
 
-                    <button onclick="gamepicks()">Generate games</button>
+                    <button onclick="gamepicks()" class="extra">Generate games</button>
 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="popcorn" class="answer"> </p>
                 </td>
             </tr>
         </table>
