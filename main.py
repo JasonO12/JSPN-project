@@ -96,6 +96,10 @@ def horror():
 def gamefinder():
     return render_template("ForWebPage/gamefinder.html")
 
+@app.route('/platform/')
+def platform():
+    return render_template("ForWebPage/platform.html")
+
 @app.route('/binary/', methods=['GET', 'POST'])
 def binary():
     if request.form:
