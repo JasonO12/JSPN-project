@@ -32,10 +32,14 @@ JSPN Project P5
 
 | Name | Requirment | Evidence | Grade |
 | --- | ---        | ---      | --- |
-| Jason | Help develop various parts of the website, adding buttons, etc. | | |
-| Nic | Add buttons and change DOM of code. | | |
-| Paul | Help make the website reflect original wireframes. | | |
-| Soma | Help develop various parts of the website, adding buttons, etc. | | |
+| Jason | Help develop various parts of the website, adding buttons, etc. Add place for video journals. | [Ticket](https://github.com/JasonO12/JSPN-project/commit/7f304fd0151fbc158f191e9bb8bea2b91fb9a275) for navbar update. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons.  | |
+| Nic | Add buttons and change DOM of code. Incorporate a sample rating page for a game. |[Ticket](https://github.com/JasonO12/JSPN-project/commit/8d8b90449a1d2856af563346942abddb75247535) for horror games section implemented, sample rating page here. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. |  |
+| Paul | Help make the website reflect original wireframes. Use tables, images, etc. | [Ticket](https://github.com/JasonO12/JSPN-project/commit/734e08c45999425bf24059b6afab43d328f08166) for updating of webpage interface, new html files for games. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. | |
+| Soma | Help develop various parts of the website, adding buttons, etc. | [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. | |
+
+#### Week 8 Presentation [Review Ticket](https://github.com/JasonO12/JSPN-project/issues/42)
+#### [Jason/Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing) for 3.7 and 3.8 notes/quizzes
+#### [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing) for 3.7 and 3.8 notes/quizzes
 
 
 ## Week 7
