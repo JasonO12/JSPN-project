@@ -167,6 +167,15 @@ def colorcode():
 def overwatch():
     return render_template("ForWebPage/overwatch.html")
 
+@app.route('/minecraft')
+def minecraft():
+    return render_template("ForWebPage/minecraft.html")
+
+@app.route('/leagueofl')
+def leagueofl():
+    return render_template("ForWebPage/leagueofl.html")
+
+
 #@app_starter.route('/joke', methods=['GET', 'POST'])
 #def joke():
 #    """
