@@ -80,9 +80,6 @@ def greet():
 def designs():
     return render_template("layouts/designs.html")
 
-@app.route('/ratings/')
-def ratings():
-    return render_template("ForWebPage/ratings.html")
 
 @app.route('/dbd/')
 def dbd():
@@ -165,6 +162,10 @@ def logicgate():
 @app.route('/colorcode')
 def colorcode():
     return render_template("layouts/colorcode.html")
+
+@app.route('/overwatch')
+def overwatch():
+    return render_template("ForWebPage/overwatch.html")
 
 #@app_starter.route('/joke', methods=['GET', 'POST'])
 #def joke():

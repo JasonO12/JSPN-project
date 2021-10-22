@@ -1,10 +1,134 @@
 <!DOCTYPE html>
+{% extends "layouts/base.html" %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<meta charset="UTF-8">
+<title>Blue Prints</title>
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <head>
+        <style>
 
-</body>
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Create two equal columns that floats next to each other */
+            .column2 {
+                float: left;
+                width:100%;
+                padding: 10px;
+                height: 800px;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            .comp {
+                color:black;
+                font-family: "Courier New", serif;
+            }
+            .party {
+                color:pink;
+                font-family: fantasy;
+            }
+            .blood {
+                color:silver;
+                text-shadow:
+                        4px 4px 1px #300000,
+                        4px 6px 1px #400000,
+                        4px 8px 1px #500000,
+                        4px 10px 1px #600000,
+                        4px 12px 1px #700000,
+                        4px 14px 1px #800000,
+                        4px 16px 1px #900000,
+                        4px 18px 1px #A00000,
+                        4px 20px 1px #B00000,
+                        4px 22px 1px #C00000,
+                        4px 24px 1px #D00000,
+                        4px 26px 1px #E00000,
+                        4px 28px 1px #F00000,
+                        4px 30px 1px #FA0000,
+                        4px 32px 1px #FB0000,
+                        4px 34px 1px #FC0000,
+                        4px 36px 1px #FD0000,
+                        4px 38px 1px #FE0000,
+                        4px 40px 2px #FF0000;
+            }
+
+            table {
+                border-spacing: 100px;
+            }
+            .button {
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            .button1 {
+                background-color: #4CAF50;
+                width: 33%;
+            }
+            .button1:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            .button2 {background-color: #008CBA; width: 33%;}
+            .button2:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            .button3 {background-color: #d30505; width: 33%;}
+            .button3:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+        </style>
+        <h1>Overwatch</h1>
+    </head>
+    <body>
+    <table>
+        <tr>
+            <th>Picture</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><img src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Ferikkain%2Ffiles%2F2016%2F05%2Foverwatch-1200x675.jpg" alt="" style="width:50%;height:50%;"></td>
+            <td><p style="color:white;">$19.99</p></td>
+            <td>
+                <p>"Overwatch is a 2016 team-based multiplayer first-person shooter game developed and
+                    published by Blizzard Entertainment. Described as a "hero shooter", Overwatch assigns
+                    players into two teams of six, with each player selecting from a large roster of
+                    characters, known as "heroes", with unique abilities."</p>
+            </td>
+        </tr>
+    </table>
+    </body>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
+
 </html>
