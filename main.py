@@ -175,6 +175,9 @@ def minecraft():
 def leagueofl():
     return render_template("ForWebPage/leagueofl.html")
 
+@app.route('/gta')
+def gta():
+    return render_template("ForWebPage/gta.html")
 
 #@app_starter.route('/joke', methods=['GET', 'POST'])
 #def joke():
