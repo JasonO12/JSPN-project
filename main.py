@@ -24,6 +24,17 @@ def kangaroos():
 @app.route('/walruses/')
 def walruses():
     return render_template("Other/walruses.html")
+@app.route('/ratings/')
+def ratings():
+    return render_template("ForWebPage/ratings.html")
+
+@app.route('/dbd/')
+def dbd():
+    return render_template("ForWebPage/dbd.html")
+
+@app.route('/horror/')
+def horror():
+    return render_template("ForWebPage/horror.html")
 
 
 @app.route('/stub/')
@@ -81,14 +92,6 @@ def designs():
     return render_template("layouts/designs.html")
 
 
-@app.route('/dbd/')
-def dbd():
-    return render_template("ForWebPage/dbd.html")
-
-@app.route('/horror/')
-def horror():
-    return render_template("ForWebPage/horror.html")
-
 @app.route('/gamefinder/')
 def gamefinder():
     return render_template("ForWebPage/gamefinder.html")
@@ -137,9 +140,6 @@ def addbinary():
 def journals():
     return render_template("MiniLabs/journals.html")
 
-@app.route('/ratings/')
-def ratings():
-    return render_template("layouts/ratings.html")
 
 @app.route('/valorant/')
 def valorant():
