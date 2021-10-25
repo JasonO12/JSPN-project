@@ -32,14 +32,14 @@ JSPN Project P5
 ## Week 9
 
 Time Box
-| Name | Individual Video | Score |
-| --- | ---        | ---      |
-|Jason| [Video](https://drive.google.com/file/d/1_Z-NBa91N67Kqc3SFUwbro9L6F4MdR65/view)| |
-|Nic|  [Video](https://drive.google.com/file/d/1TFaPJ8jzO7jobZ96OXrtgyslZ5lGkZQA/view?usp=sharing)| |
-|Paul| [Video](https://drive.google.com/file/d/1-MhSDJKp4AXLRYRBf_dpZn86Q0MHKczq/view)| |
-|Soma| [Video](https://drive.google.com/file/d/1MdWa9peZOlLB8lzcTb8dysYRVJKXq_EE/view)| |
+| Name | Individual Video | Video Score (Average) | Grading Score |
+| --- | ---        | ---      | ---      |
+|Jason| [Video](https://drive.google.com/file/d/1_Z-NBa91N67Kqc3SFUwbro9L6F4MdR65/view)| 17.5/18| |
+|Nic|  [Video](https://drive.google.com/file/d/1TFaPJ8jzO7jobZ96OXrtgyslZ5lGkZQA/view?usp=sharing)| 18/18 | |
+|Paul| [Video](https://drive.google.com/file/d/1-MhSDJKp4AXLRYRBf_dpZn86Q0MHKczq/view)| 17/18 | |
+|Soma| [Video](https://drive.google.com/file/d/1MdWa9peZOlLB8lzcTb8dysYRVJKXq_EE/view)| 16/18 | |
 
-#### [Issue](https://github.com/JasonO12/JSPN-project/issues/50) containing videos
+#### [Issue](https://github.com/JasonO12/JSPN-project/issues/50) containing videos and scrum team grading comments
 
 ## Week 8
 
