@@ -4,6 +4,7 @@ JSPN Project P5
 ## Table Of Contents
 
   - [Project Credits](https://github.com/JasonO12/JSPN-project#jspn-project-credits)
+  - [Week 9](https://github.com/JasonO12/JSPN-project#week-9)
   - [Week 8](https://github.com/JasonO12/JSPN-project#week-8)
   - [Week 7](https://github.com/JasonO12/JSPN-project#week-7)
   - [Week 6](https://github.com/JasonO12/JSPN-project#week-6)
@@ -27,6 +28,18 @@ JSPN Project P5
 | Nicolas Mounier    | [@nicm2](https://github.com/nicm2)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)      | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)     | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=nicm2)   | [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing)      |
 | Paul DiPasquale       | [@Paul-D6](https://github.com/Paul-D6)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)      | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=Paul-D6)    | [Jason and Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing)      |
 | Somaditya Singh        | [@somaditya1](https://github.com/somaditya1)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)    | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=somaditya1)    | [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing)     |
+
+## Week 9
+
+Time Box
+| Name | Individual Video | Score |
+| --- | ---        | ---      |
+|Jason| [Video](https://drive.google.com/file/d/1_Z-NBa91N67Kqc3SFUwbro9L6F4MdR65/view)| |
+|Nic| | |
+|Paul| [Video](https://drive.google.com/file/d/1-MhSDJKp4AXLRYRBf_dpZn86Q0MHKczq/view)| |
+|Soma| [Video](https://drive.google.com/file/d/1MdWa9peZOlLB8lzcTb8dysYRVJKXq_EE/view)| |
+
+#### [Issue](https://github.com/JasonO12/JSPN-project/issues/50) containing videos
 
 ## Week 8
 
