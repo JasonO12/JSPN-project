@@ -137,6 +137,18 @@ def addbinary():
 def journals():
     return render_template("MiniLabs/journals.html")
 
+@app.route('/ratings/')
+def ratings():
+    return render_template("layouts/ratings.html")
+
+@app.route('/valorant/')
+def valorant():
+    return render_template("ForWebPage/valorant.html")
+
+@app.route('/fortnite')
+def fornite():
+    return render_template("ForWebPage/fortnite.html")
+
 # @app.route('/colorcode/')
 # def colorcode():
 #     return render_template("MiniLabs/colorcode.html")
