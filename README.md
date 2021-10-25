@@ -35,7 +35,7 @@ Time Box
 | Name | Individual Video | Score |
 | --- | ---        | ---      |
 |Jason| [Video](https://drive.google.com/file/d/1_Z-NBa91N67Kqc3SFUwbro9L6F4MdR65/view)| |
-|Nic| | |
+|Nic|  [Video](https://drive.google.com/file/d/1TFaPJ8jzO7jobZ96OXrtgyslZ5lGkZQA/view?usp=sharing)| |
 |Paul| [Video](https://drive.google.com/file/d/1-MhSDJKp4AXLRYRBf_dpZn86Q0MHKczq/view)| |
 |Soma| [Video](https://drive.google.com/file/d/1MdWa9peZOlLB8lzcTb8dysYRVJKXq_EE/view)| |
 
