@@ -139,7 +139,7 @@ def journals():
 
 @app.route('/ratings/')
 def ratings():
-    return render_template("layouts/ratings.html")
+    return render_template("ForWebPage/ratings.html")
 
 @app.route('/valorant/')
 def valorant():
