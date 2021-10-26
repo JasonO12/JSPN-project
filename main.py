@@ -80,9 +80,6 @@ def greet():
 def designs():
     return render_template("layouts/designs.html")
 
-@app.route('/ratings/')
-def ratings():
-    return render_template("ForWebPage/ratings.html")
 
 @app.route('/dbd/')
 def dbd():
@@ -140,6 +137,18 @@ def addbinary():
 def journals():
     return render_template("MiniLabs/journals.html")
 
+@app.route('/ratings/')
+def ratings():
+    return render_template("layouts/ratings.html")
+
+@app.route('/valorant/')
+def valorant():
+    return render_template("ForWebPage/valorant.html")
+
+@app.route('/fortnite')
+def fornite():
+    return render_template("ForWebPage/fortnite.html")
+
 # @app.route('/colorcode/')
 # def colorcode():
 #     return render_template("MiniLabs/colorcode.html")
@@ -165,6 +174,22 @@ def logicgate():
 @app.route('/colorcode')
 def colorcode():
     return render_template("layouts/colorcode.html")
+
+@app.route('/overwatch')
+def overwatch():
+    return render_template("ForWebPage/overwatch.html")
+
+@app.route('/minecraft')
+def minecraft():
+    return render_template("ForWebPage/minecraft.html")
+
+@app.route('/leagueofl')
+def leagueofl():
+    return render_template("ForWebPage/leagueofl.html")
+
+@app.route('/gta')
+def gta():
+    return render_template("ForWebPage/gta.html")
 
 #@app_starter.route('/joke', methods=['GET', 'POST'])
 #def joke():

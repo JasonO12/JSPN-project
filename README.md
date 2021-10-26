@@ -4,6 +4,7 @@ JSPN Project P5
 ## Table Of Contents
 
   - [Project Credits](https://github.com/JasonO12/JSPN-project#jspn-project-credits)
+  - [Week 9](https://github.com/JasonO12/JSPN-project#week-9)
   - [Week 8](https://github.com/JasonO12/JSPN-project#week-8)
   - [Week 7](https://github.com/JasonO12/JSPN-project#week-7)
   - [Week 6](https://github.com/JasonO12/JSPN-project#week-6)
@@ -28,14 +29,30 @@ JSPN Project P5
 | Paul DiPasquale       | [@Paul-D6](https://github.com/Paul-D6)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)      | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=Paul-D6)    | [Jason and Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing)      |
 | Somaditya Singh        | [@somaditya1](https://github.com/somaditya1)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)    | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=somaditya1)    | [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing)     |
 
+## Week 9
+
+Time Box
+| Name | Individual Video | Video Score (Average) | Grading Score |
+| --- | ---        | ---      | ---      |
+|Jason| [Video](https://drive.google.com/file/d/1_Z-NBa91N67Kqc3SFUwbro9L6F4MdR65/view)| 17.25/18| |
+|Nic|  [Video](https://drive.google.com/file/d/1TFaPJ8jzO7jobZ96OXrtgyslZ5lGkZQA/view?usp=sharing)| 18/18 | |
+|Paul| [Video](https://drive.google.com/file/d/1-MhSDJKp4AXLRYRBf_dpZn86Q0MHKczq/view)| 17/18 | |
+|Soma| [Video](https://drive.google.com/file/d/1MdWa9peZOlLB8lzcTb8dysYRVJKXq_EE/view)| 16/18 | |
+
+#### [Issue](https://github.com/JasonO12/JSPN-project/issues/50) containing videos and scrum team grading comments
+
 ## Week 8
 
 | Name | Requirment | Evidence | Grade |
 | --- | ---        | ---      | --- |
-| Jason | Help develop various parts of the website, adding buttons, etc. | | |
-| Nic | Add buttons and change DOM of code. | | |
-| Paul | Help make the website reflect original wireframes. | | |
-| Soma | Help develop various parts of the website, adding buttons, etc. | | |
+| Jason | Help develop various parts of the website, adding buttons, etc. Add place for video journals. | [Ticket](https://github.com/JasonO12/JSPN-project/commit/7f304fd0151fbc158f191e9bb8bea2b91fb9a275) for navbar update. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons.  | |
+| Nic | Add buttons and change DOM of code. Incorporate a sample rating page for a game. |[Ticket](https://github.com/JasonO12/JSPN-project/commit/8d8b90449a1d2856af563346942abddb75247535) for horror games section implemented, sample rating page here. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. |  |
+| Paul | Help make the website reflect original wireframes. Use tables, images, etc. | [Ticket](https://github.com/JasonO12/JSPN-project/commit/734e08c45999425bf24059b6afab43d328f08166) for updating of webpage interface, new html files for games. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. | |
+| Soma | Help develop various parts of the website, adding buttons, etc. | [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. | |
+
+#### Week 8 Presentation [Review Ticket](https://github.com/JasonO12/JSPN-project/issues/42)
+#### [Jason/Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing) for 3.7 and 3.8 notes/quizzes
+#### [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing) for 3.7 and 3.8 notes/quizzes
 
 
 ## Week 7
