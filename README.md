@@ -34,7 +34,7 @@ JSPN Project P5
 Time Box
 | Name | Individual Video | Video Score (Average) | Grading Score |
 | --- | ---        | ---      | ---      |
-|Jason| [Video](https://drive.google.com/file/d/1_Z-NBa91N67Kqc3SFUwbro9L6F4MdR65/view)| 17.5/18| |
+|Jason| [Video](https://drive.google.com/file/d/1_Z-NBa91N67Kqc3SFUwbro9L6F4MdR65/view)| 17.25/18| |
 |Nic|  [Video](https://drive.google.com/file/d/1TFaPJ8jzO7jobZ96OXrtgyslZ5lGkZQA/view?usp=sharing)| 18/18 | |
 |Paul| [Video](https://drive.google.com/file/d/1-MhSDJKp4AXLRYRBf_dpZn86Q0MHKczq/view)| 17/18 | |
 |Soma| [Video](https://drive.google.com/file/d/1MdWa9peZOlLB8lzcTb8dysYRVJKXq_EE/view)| 16/18 | |
