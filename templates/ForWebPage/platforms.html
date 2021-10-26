@@ -6,17 +6,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
 
     <script>
-        function platformpicks()
-        {
-            const platformlist = ["PC", "Playstation", "XBox", "Nintendo Switch"];
+        function platformpicks() {
+            {#const platformlist = ["PC", "Playstation", "XBox", "Nintendo Switch", "Mobile"];#}
             const resultA = document.getElementById("input1").value;
 
             if (resultA === "0") {
-                document.getElementById("selection").innerHTML=platformlist[1,2,3,4];
+                document.getElementById("selection").innerHTML = "PC, Playstation, XBox, Nintendo Switch, Mobile";
+            } else if (resultA === "1") {
+                document.getElementById("selection").innerHTML = "PC, Playstation, XBox One, Nintendo Switch, Mobile";
+            } else if (resultA === "2") {
+                document.getElementById("selection").innerHTML = "PC";
+            } else if (resultA === "3") {
+                document.getElementById("selection").innerHTML = "PC, Playstation, XBox, Nintendo Switch, Mobile";
+            } else if (resultA === "4") {
+                document.getElementById("selection").innerHTML = "PC, Playstation, XBox, Nintendo Switch, Mobile";
+            } else if (resultA === "5") {
+                document.getElementById("selection").innerHTML = ;
             }
-            else if(resultA === "1") {
-                document.getElementById("selection").innerHTML=platformlist[1,2,3];
-            }
+        }
+
+
 
     </script>
 
@@ -73,13 +82,16 @@
                         <option value="2">Valorant</option>
                         <option value="3">Dead By Daylight</option>
                         <option value="4">Overwatch</option>
-                        <option value="3">Grand Theft Auto V</option>
+                        <option value="5">Grand Theft Auto V</option>
                     </select>
 
                     <button class="btn" onclick="platformpicks()">Generate possible platforms</button>
                     {#                    <input class="op" id="output">#}
 
                 </td>
+
+            </tr>
+            <tr>
                 <td>
                     <p id="selection" class="answer"> </p>
                 </td>
