@@ -7,24 +7,24 @@
 
     <script>
         function platformpicks() {
-            {#const platformlist = ["PC", "Playstation", "XBox", "Nintendo Switch", "Mobile"];#}
+            const platformlist = ["PC", "Playstation", "XBox", "Nintendo Switch", "Mobile"];
             const resultA = document.getElementById("input1").value;
 
-            if (resultA === "0") {
-                document.getElementById("selection").innerHTML = "PC, Playstation, XBox, Nintendo Switch, Mobile";
-            } else if (resultA === "1") {
-                document.getElementById("selection").innerHTML = "PC, Playstation, XBox One, Nintendo Switch, Mobile";
-            } else if (resultA === "2") {
-                document.getElementById("selection").innerHTML = "PC";
-            } else if (resultA === "3") {
-                document.getElementById("selection").innerHTML = "PC, Playstation, XBox, Nintendo Switch, Mobile";
-            } else if (resultA === "4") {
-                document.getElementById("selection").innerHTML = "PC, Playstation, XBox, Nintendo Switch, Mobile";
-            } else if (resultA === "5") {
-                document.getElementById("selection").innerHTML = ;
-            }
-        }
 
+            if (resultA === "0") {
+                    document.getElementById("selection").innerHTML = platformlist[0]+", "+platformlist[1]+", "+platformlist[2]+", "+platformlist[3]+", "+platformlist[4];
+                } else if (resultA === "1") {
+                    document.getElementById("selection").innerHTML = platformlist[0]+", "+platformlist[1]+", "+platformlist[2]+"One, "+platformlist[3]+", "+platformlist[4];
+                } else if (resultA === "2") {
+                    document.getElementById("selection").innerHTML = platformlist[0];
+                } else if (resultA === "3") {
+                    document.getElementById("selection").innerHTML = platformlist[0]+", "+platformlist[1]+", "+platformlist[2]+", "+platformlist[3]+", "+platformlist[4];
+                } else if (resultA === "4") {
+                    document.getElementById("selection").innerHTML = platformlist[0]+", "+platformlist[1]+", "+platformlist[2]+", "+platformlist[3];
+                } else if (resultA === "5") {
+                    document.getElementById("selection").innerHTML = platformlist[0]+", "+platformlist[1]+", "+platformlist[2];
+                }
+        }
 
 
     </script>
@@ -45,30 +45,95 @@
         height: 800px;
     }
     /* Clear floats after the columns */
+
+    .button {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 23px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .button1 {
+        background-color: #4CAF50;
+        width: 24%;
+    }
+    .button1:hover {
+        box-shadow: 0 12px 16px 0 rgb(255,255,255), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .button2 {background-color: #008CBA; width: 24%;}
+    .button2:hover {
+        box-shadow: 0 12px 16px 0 rgb(255,255,255), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .button3 {background-color: #d30505; width: 24%;}
+    .button3:hover {
+        box-shadow: 0 12px 16px 0 rgb(255,255,255), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    .button4 {background-color: mediumpurple; width: 24%;}
+    .button4:hover {
+        box-shadow: 0 12px 16px 0 rgb(255,255,255), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+
     .row:after {
         content: "";
         display: table;
         clear: both;
     }
+
+    .space {
+        float: left;
+        width: 33%;
+        padding: 20px;
+    }
+
     table {
-        {#font-family: arial, sans-serif;#}
-        {#border-collapse: collapse;#}
-        {#width: 100%;#}
+    {#font-family: arial, sans-serif;#}
+    {#border-collapse: collapse;#}
+    {#width: 100%;#}
         margin-left: auto;
         margin-right: auto;
     }
 
     tr:nth-child(even) {
-        background-color: #d30505;
+        background-color: #e05a5a;
     }
     body{
-        background-color: #d30505;
+        background-color: #e05a5a;
 
     }
+
 </style>
 <div class="row">
-    <div style="background-color:#d30505">
-        <h1 style="text-align:center">Find A Gaming Platform</h1>
+    <h1 style="text-align:center">Find A Gaming Platform</h1>
+    <table style= "width:100%" >
+        <tr>
+            <form method="get" action="/designs">
+                <button class="button button1">Home</button>
+            </form>
+        </tr>
+        <tr>
+            <form method="get" action="/ratings">
+                <button class="button button2">Add Ratings</button>
+            </form>
+        </tr>
+        <tr>
+            <form method="get" action="/platforms">
+                <button class="button button3">Platforms/Graphic Settings</button>
+            </form>
+        </tr>
+        <tr>
+            <form method="get" action="/gamefinder">
+                <button class="button button4">Find Games For You</button>
+            </form>
+        </tr>
+    </table>
+    <div style="background-color:#e05a5a">
+
         <table>
             <tr>
                 <th>Please input your desired video game</th>
@@ -97,6 +162,23 @@
                 </td>
             </tr>
         </table>
+        <div class="row">
+            <div class="space">
+                <form method="get" action="/riot">
+                    <input type="image" name="Name of image button" src="http://assets.stickpng.com/images/6095211c53a8bf00040ff3a4.png" alt="text" style="width:50%">
+                </form>
+            </div>
+            <div class="space">
+                <form method="get" action="/epic">
+                    <input type="image" name="Name of image button" src="https://cdn2.unrealengine.com/Epic+Games+Node%2FepicLogo_1920x1080-1920x1080-401b77ef30fa9e5aaadbdd99ad2ff27ceda27a6f.png" alt="text" style="width:100%">
+                </form>
+            </div>
+            <div class="space">
+                <form method="get" action="/mojang">
+                    <input type="image" name="Name of image button" src="https://download.logo.wine/logo/Mojang/Mojang-Logo.wine.png" alt="text" style="width:100%">
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 </body>
