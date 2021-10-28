@@ -179,7 +179,7 @@ def colorcode():
 def overwatch():
     return render_template("ForWebPage/overwatch.html")
 
-@app.route('/minecraft')
+@app.route('/minecraft/')
 def minecraft():
     return render_template("ForWebPage/minecraft.html")
 
@@ -194,6 +194,18 @@ def gta():
 @app.route('/randomname')
 def randomname():
     return render_template("ForWebPage/randomname.html")
+
+@app.route('/epic/')
+def epic():
+    return render_template("ForWebPage/epic.html")
+
+@app.route('/riot/')
+def riot():
+    return render_template("ForWebPage/riot.html")
+
+@app.route('/mojang/')
+def mojang():
+    return render_template("ForWebPage/mojang.html")
 
 #@app_starter.route('/joke', methods=['GET', 'POST'])
 #def joke():

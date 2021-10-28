@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+<html lang="en">
+<meta charset="UTF-8">
+<title>Blue Prints</title>
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <head>
+        <style>
+
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Create two equal columns that floats next to each other */
+            .column2 {
+                float: left;
+                width:100%;
+                padding: 10px;
+                height: 800px;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 90%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            .comp {
+                color:black;
+                font-family: "Courier New", serif;
+            }
+            .party {
+                color:pink;
+                font-family: fantasy;
+            }
+            .blood {
+                color:silver;
+                text-shadow:
+                        4px 4px 1px #300000,
+                        4px 6px 1px #400000,
+                        4px 8px 1px #500000,
+                        4px 10px 1px #600000,
+                        4px 12px 1px #700000,
+                        4px 14px 1px #800000,
+                        4px 16px 1px #900000,
+                        4px 18px 1px #A00000,
+                        4px 20px 1px #B00000,
+                        4px 22px 1px #C00000,
+                        4px 24px 1px #D00000,
+                        4px 26px 1px #E00000,
+                        4px 28px 1px #F00000,
+                        4px 30px 1px #FA0000,
+                        4px 32px 1px #FB0000,
+                        4px 34px 1px #FC0000,
+                        4px 36px 1px #FD0000,
+                        4px 38px 1px #FE0000,
+                        4px 40px 2px #FF0000;
+            }
+
+            table {
+                border-spacing: 100px;
+            }
+            .button {
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            .button1 {
+                background-color: #4CAF50;
+                width: 33%;
+            }
+            .button1:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            .button2 {background-color: #008CBA; width: 33%;}
+            .button2:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            .button3 {background-color: #d30505; width: 33%;}
+            .button3:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+        </style>
+        <h1 style="font-family:sans-serif;padding-left:75px;">Mojang</h1>
+    </head>
+    <body>
+    <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+        <tr>
+            <th>Company Logo</th>
+            <th>About Mojang</th>
+            <th>Popular Games By Mojang</th>
+        </tr>
+        <tr>
+            <td><img src="data:image/png;base64,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" alt="" style="width:100%;height:100%;"></td>
+            <td><p style="color:white;">  </p></td>
+            <td>
+                <p> Mojang's most popular games are all Minecraft related. These include Minecraft, Minecraft Bedrock, Minecraft Dungeons, Minecraft Earth, and Minecraft Story Mode. Mojang has also developed other popular games like Caller's Bane and Cobalt.</p>
+            </td>
+        </tr>
+    </table>
+    </body>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
+
+</html>
