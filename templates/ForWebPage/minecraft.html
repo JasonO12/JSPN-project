@@ -7,48 +7,28 @@
 {% block body %}
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
-
         <script>
-            function gamepicks()
-            {
-                alert("HI");
-            }
             function checknum()
             {
-                alert("Hi");
                 let num1 = 126000000;
-                const resultA = document.getElementById("display").value;
-                alert("Hi");
-
-                while (resultA !== num1) {
-                    if (resultA > num1) {
-                        alert("Hi");
-                        {#document.getElementById("display").innerHTML = "Try Lower";#}
-                    }
-                    else if (resultA < num1) {
-                        alert("Hi");
-                        {#document.getElementById("display").innerHTML = "Try Higher";#}
-                    }
+                const resultA = document.getElementById("input1").value;
+                if (resultA > num1) {
+                    document.getElementById("display").innerHTML = "Try Lower";
                 }
-                {#document.getElementById("display").innerHTML = "Correct! Nice Job";#}
-
-
-
-            else if (resultB === "3") {
-                    alert("Error: Choose a game type");
-                } else {
-                    {#alert("A: " + resultA + "B: " + resultB);#}
-                    if (resultA === "0" && resultB === "0") {
-                        document.getElementById("popcorn").innerHTML=gamelist[2]+", "+ gamelist[6];
-                    }
-
-
+                else if (resultA < num1) {
+                        document.getElementById("display").innerHTML = "Try Higher";
                 }
-
+                else if (resultA === num1) {
+                    document.getElementById("display").innerHTML = "Correct! Nice Job";
+                }
             }
         </script>
+    </head>
+    <body>
         <style>
-
+            .leftspace {
+                padding-left: 100px;
+            }
 
             * {
                 box-sizing: border-box;
@@ -211,8 +191,6 @@
             }
         </style>
         <h1>Minecraft</h1>
-    </head>
-    <body>
     <table>
         <tr>
             <th>Picture</th>
@@ -232,7 +210,7 @@
             </td>
         </tr>
     </table>
-    <div class="col-12">
+    <div class="leftspace">
         <form id="guess" method="POST" >
             <label for="name">Guess how many people play this game?</label>
             <input id="input1">
@@ -240,7 +218,6 @@
         <button onclick="checknum()" class="cta">Check!</button>
         <p id="display"> </p>
     </div>
-{#    <button onclick="gamepicks()" class="extra">Generate games</button>#}
     </body>
 {% endblock %}
 <!- This is turning off birds background from base.html -->
