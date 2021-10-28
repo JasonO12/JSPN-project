@@ -1,6 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+  font-family: Georgia, serif;
+  background-image: url('https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png');
+}
+</style>
+<body>
 <div class="container-fluid">
   <h1 class="box light-blue-box rokkitt text-center">
-    RANDOM NAME GENERATOR
+    RANDOM GAMER TAG GENERATOR
   </h1>
   <div class="box light-gray-box rokkitt text-center">
     <h3>Instructions</h3>
@@ -9,8 +18,12 @@
   <h4></h4>
   <button onclick="generator()" class="btn btn-primary btn-block btn-large">Generate!</button>
   <h1 class="jumbotron text-center rokkitt" id="name">Your Name Will Appear Here</h1>
+
+
 </div>
-</body>
+
+  <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/2432187/xbox-controller-clipart-xl.png" width="16%">
+<a class="nav-link" href={{ url_for('index') }}>Return</div>
 
 <script>
 var adjective = ["Excited", "Anxious", "Overweight", "Demonic", "Jumpy", "Misunderstood", "Squashed", "Gargantuan","Broad", "Crooked", "Curved", "Deep", "Even","Excited", "Anxious", "Overweight", "Demonic", "Jumpy", "Misunderstood", "Squashed", "Gargantuan","Broad", "Crooked", "Curved", "Deep", "Even", "Flat", "Hilly", "Jagged", "Round", "Shallow", "Square", "Steep", "Straight", "Thick", "Thin", "Cooing", "Deafening", "Faint", "Harsh", "High-pitched", "Hissing", "Hushed", "Husky", "Loud", "Melodic", "Moaning", "Mute", "Noisy", "Purring", "Quiet", "Raspy", "Screeching", "Shrill", "Silent", "Soft", "Squeaky", "Squealing", "Thundering", "Voiceless", "Whispering"]
@@ -21,3 +34,6 @@ function generator() {
 document.getElementById("name").innerHTML = adjective[Math.floor(Math.random() * adjective.length)] + " " + object[Math.floor(Math.random() * object.length)];;;
 }
 </script>
+
+</body>
+</html>
