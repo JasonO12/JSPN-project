@@ -191,6 +191,10 @@ def leagueofl():
 def gta():
     return render_template("ForWebPage/gta.html")
 
+@app.route('/randomname')
+def randomname():
+    return render_template("ForWebPage/randomname.html")
+
 #@app_starter.route('/joke', methods=['GET', 'POST'])
 #def joke():
 #    """
