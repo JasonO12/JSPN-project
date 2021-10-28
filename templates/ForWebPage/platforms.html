@@ -25,11 +25,6 @@
                     document.getElementById("selection").innerHTML = platformlist[0]+", "+platformlist[1]+", "+platformlist[2];
                 }
         }
-
-
-    </script>
-
-    <script>
         function companypicks() {
             const companylist = ["Riot Games", "Epic Games", "Rockstar Games", "Blizzard Entertainment", "Behaviour Interactive", "Nintendo", "Mojang"];
             const resultA = document.getElementById("input2").value;
@@ -124,14 +119,15 @@
     }
 
     tr:nth-child(even) {
-        background-color: #e05a5a;
     }
-    body{
-        background-color: #e05a5a;
 
+    body{
+        background-image: url("");
+        background-size: 100%
     }
 
 </style>
+<body>
 <div class="row">
     <h1 style="text-align:center">Find Gaming Platforms AND Company Information!</h1>
     <table style= "width:100%" >
@@ -156,7 +152,7 @@
             </form>
         </tr>
     </table>
-    <div style="background-color:#e05a5a">
+    <div>
 
         <table>
             <tr>
@@ -229,6 +225,52 @@
                 </form>
             </div>
         </div>
+
+        <table>
+            <tr>
+                <th>Quiz! Match the year, game, and company</th>
+            </tr>
+            <tr>
+
+                    <td>
+                        <select class="extra" id="input3">
+                            <option value="0">Minecraft</option>
+                            <option value="1">Fortnite</option>
+                            <option value="2">Valorant</option>
+                            <option value="3">Dead By Daylight</option>
+                            <option value="4">Overwatch</option>
+                            <option value="5">Grand Theft Auto V</option>
+                        </select>
+                        <select class="extra" id="input4">
+                            <option value="0">Minecraft</option>
+                            <option value="1">Fortnite</option>
+                            <option value="2">Valorant</option>
+                            <option value="3">Dead By Daylight</option>
+                            <option value="4">Overwatch</option>
+                            <option value="5">Grand Theft Auto V</option>
+                        </select>
+                        <select class="extra" id="input5">
+                            <option value="0">Blizzard Entertainment</option>
+                            <option value="1">Rockstar Games</option>
+                            <option value="2">Epic Games</option>
+                            <option value="3">Riot Games</option>
+                            <option value="4">Mojang</option>
+                            <option value="5">Behaviour Interactive</option>
+                        </select>
+
+                        <button class="btn" onclick="companypicks()">Generate Company</button>
+
+                    </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p id="conclusion" class="answer"> </p>
+                </td>
+            </tr>
+        </table>
+
+
     </div>
 </div>
 </body>
