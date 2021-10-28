@@ -179,7 +179,7 @@ def colorcode():
 def overwatch():
     return render_template("ForWebPage/overwatch.html")
 
-@app.route('/minecraft')
+@app.route('/minecraft/')
 def minecraft():
     return render_template("ForWebPage/minecraft.html")
 
