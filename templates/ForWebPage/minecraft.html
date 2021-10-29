@@ -12,14 +12,14 @@
             {
                 let num1 = 126000000;
                 const resultA = document.getElementById("input1").value;
+                {#while (resultA !== num1)#}
                 if (resultA > num1) {
                     document.getElementById("display").innerHTML = "Try Lower";
                 }
                 else if (resultA < num1) {
                         document.getElementById("display").innerHTML = "Try Higher";
-                }
-                else if (resultA === num1) {
-                    document.getElementById("display").innerHTML = "Correct! Nice Job";
+                } else {
+                        document.getElementById("display").innerHTML = "Correct! Nice Job";
                 }
             }
         </script>
@@ -212,11 +212,11 @@
     </table>
     <div class="leftspace">
         <form id="guess" method="POST" >
-            <label for="name">Guess how many people play this game?</label>
+            <label>Guess how many people play this game?</label>
             <input id="input1">
+
         </form>
-        <button onclick="checknum()" class="cta">Check!</button>
-        <p id="display"> </p>
+        <button onclick="checknum()" class="cta">Check!</button> <p id="display"> </p>
     </div>
     </body>
 {% endblock %}

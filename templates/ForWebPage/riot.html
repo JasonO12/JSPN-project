@@ -1,10 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<meta charset="UTF-8">
+<title>Blue Prints</title>
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <head>
+        <style>
 
-</body>
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Create two equal columns that floats next to each other */
+            .column2 {
+                float: left;
+                width:100%;
+                padding: 10px;
+                height: 800px;
+            }
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 90%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            .comp {
+                color:black;
+                font-family: "Courier New", serif;
+            }
+            .party {
+                color:pink;
+                font-family: fantasy;
+            }
+            .blood {
+                color:silver;
+                text-shadow:
+                        4px 4px 1px #300000,
+                        4px 6px 1px #400000,
+                        4px 8px 1px #500000,
+                        4px 10px 1px #600000,
+                        4px 12px 1px #700000,
+                        4px 14px 1px #800000,
+                        4px 16px 1px #900000,
+                        4px 18px 1px #A00000,
+                        4px 20px 1px #B00000,
+                        4px 22px 1px #C00000,
+                        4px 24px 1px #D00000,
+                        4px 26px 1px #E00000,
+                        4px 28px 1px #F00000,
+                        4px 30px 1px #FA0000,
+                        4px 32px 1px #FB0000,
+                        4px 34px 1px #FC0000,
+                        4px 36px 1px #FD0000,
+                        4px 38px 1px #FE0000,
+                        4px 40px 2px #FF0000;
+            }
+
+            table {
+                border-spacing: 100px;
+            }
+
+            body {
+                background-color: indianred;
+            }
+            .button {
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            .button1 {
+                background-color: #4CAF50;
+                width: 33%;
+            }
+            .button1:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            .button2 {background-color: #008CBA; width: 33%;}
+            .button2:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+            .button3 {background-color: #d30505; width: 33%;}
+            .button3:hover {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+        </style>
+        <h1 style="font-family:sans-serif;padding-left:75px;">Riot Games</h1>
+    </head>
+    <body>
+    <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+        <tr>
+            <th>Company Logo</th>
+            <th>About Riot Games</th>
+            <th>Popular Games By Riot</th>
+        </tr>
+        <tr>
+            <td><img src="data:image/png;base64,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" alt="" style="width:100%;height:100%;"></td>
+            <td><p style="color:black;">Riot Games was originally created by Brandon Beck and Mark Merrill, when they were friends in college and shared a love for video games. As the company grew, they began to test their first game, League of Legends, which is their most popular game to date. Valorant, one of their newer games, was released in 2020, and has many esports teams surrounding it.</p></td>
+            <td>
+                <p>Riot Games has developed many popular games, including Valorant, League of Legends, Teamfight Tactics, Legends of Runeterra, and Rising Thunder.</p>
+            </td>
+        </tr>
+    </table>
+    </body>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
+
 </html>
