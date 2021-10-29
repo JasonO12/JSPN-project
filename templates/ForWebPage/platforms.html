@@ -25,6 +25,7 @@
                     document.getElementById("selection").innerHTML = platformlist[0]+", "+platformlist[1]+", "+platformlist[2];
                 }
         }
+
         function companypicks() {
             const companylist = ["Riot Games", "Epic Games", "Rockstar Games", "Blizzard Entertainment", "Behaviour Interactive", "Nintendo", "Mojang"];
             const resultA = document.getElementById("input2").value;
@@ -43,6 +44,33 @@
             } else if (resultA === "5") {
                 document.getElementById("conclusion").innerHTML = companylist[2];
             }
+
+        }
+
+        function quizpicks() {
+            const quizlist = ["Correct!", "Try Again..."];
+            const resultA = document.getElementById("input3").value;
+            const resultB = document.getElementById("input4").value;
+            const resultC = document.getElementById("input5").value;
+
+
+            if (resultA === "0" && resultB === "3" && resultC === "5") {
+                document.getElementById("quizzical").innerHTML = quizlist[0];
+            } else if (resultA === "0" && resultB === "4" && resultC === "0") {
+                document.getElementById("quizzical").innerHTML = quizlist[0];
+            } else if (resultA === "1" && resultB === "2" && resultC === "3") {
+                document.getElementById("quizzical").innerHTML = quizlist[0];
+            } else if (resultA === "2" && resultB === "5" && resultC === "1") {
+                document.getElementById("quizzical").innerHTML = quizlist[0];
+            } else if (resultA === "3" && resultB === "0" && resultC === "4") {
+                document.getElementById("quizzical").innerHTML = quizlist[0];
+            } else if (resultA === "4" && resultB === "1" && resultC === "2") {
+                document.getElementById("quizzical").innerHTML = quizlist[0];
+            } else {
+                document.getElementById("quizzical").innerHTML = quizlist[1];
+            }
+
+
         }
 
 
@@ -119,18 +147,18 @@
     }
 
     tr:nth-child(even) {
+        background-color: indianred;
     }
 
     body{
-        background-image: url("");
+        background-color: indianred;
         background-size: 100%
     }
 
 </style>
-<body>
 <div class="row">
     <h1 style="text-align:center">Find Gaming Platforms AND Company Information!</h1>
-    <table style= "width:100%" >
+    <table style= "width:100%">
         <tr>
             <form method="get" action="/designs">
                 <button class="button button1">Home</button>
@@ -234,12 +262,11 @@
 
                     <td>
                         <select class="extra" id="input3">
-                            <option value="0">Minecraft</option>
-                            <option value="1">Fortnite</option>
-                            <option value="2">Valorant</option>
-                            <option value="3">Dead By Daylight</option>
-                            <option value="4">Overwatch</option>
-                            <option value="5">Grand Theft Auto V</option>
+                            <option value="0">2016</option>
+                            <option value="1">2020</option>
+                            <option value="2">2013</option>
+                            <option value="3">2011</option>
+                            <option value="4">2017</option>
                         </select>
                         <select class="extra" id="input4">
                             <option value="0">Minecraft</option>
@@ -258,18 +285,17 @@
                             <option value="5">Behaviour Interactive</option>
                         </select>
 
-                        <button class="btn" onclick="companypicks()">Generate Company</button>
+                        <button class="btn" onclick="quizpicks()">Check your answers!</button>
 
                     </td>
 
             </tr>
             <tr>
                 <td>
-                    <p id="conclusion" class="answer"> </p>
+                    <p id="quizzical" class="answer"> </p>
                 </td>
             </tr>
         </table>
-
 
     </div>
 </div>
