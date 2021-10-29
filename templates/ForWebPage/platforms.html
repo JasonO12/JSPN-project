@@ -70,8 +70,22 @@
                 document.getElementById("quizzical").innerHTML = quizlist[1];
             }
 
-
         }
+
+
+        {#let gameYears {#}
+        {#    Minecraft: 2011,#}
+        {#    DeadByDaylight: 2016,#}
+        {#    Valorant: 2020,#}
+        {#    Overwatch: 2016,#}
+        {#    GTAV: 2013,#}
+        {#    Fortnite: 2017#}
+        {#}#}
+        {#for(let key in gameYears) {#}
+        {#    console.log(key, "=", gameYears[key]);#}
+        {#}#}
+
+
 
 
     </script>
