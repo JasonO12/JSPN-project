@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-{% extends "layouts/layout.html" %}
+{% extends "layouts/base.html" %}
 
-{% block content %}
+{% block body %}
     <div class="container">
 
         <div class="center-block" style="margin: 2% 5% 5%; font-family: gilroy,serif;">
             <div class="col-12" style="text-align: center;">
                 <h1><strong>Random Joke</strong></h1>
-                <form action={{url_for('starter.joke')}}>
+                <form action={{url_for('joke')}}>
                     <button>Refresh!</button>
                 </form>
             </div>
@@ -26,7 +26,7 @@
                 <th>JSON Data</th>
             </tr>
             <tr>
-                <td>{{joke}}</td>
+                <td style="color:black">{{joke}}</td>
             </tr>
         </table>
 

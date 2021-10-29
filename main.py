@@ -3,6 +3,11 @@ from flask import Flask, render_template, request
 from algorithm.image import image_data
 from pathlib import Path
 import math
+import wikipedia, requests
+from PIL import Image, ImageDraw, ImageFont
+from ctypes import *
+from templates.api.sportsapi import api_bp
+
 
 # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
 # create a Flask instance
@@ -111,6 +116,9 @@ def binary():
 def login():
     return render_template("layouts/login.html")
 
+@app.route('/api/')
+def api():
+    return render_template("layouts/api.html")
 
 @app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
@@ -148,6 +156,7 @@ def valorant():
 @app.route('/fortnite')
 def fornite():
     return render_template("ForWebPage/fortnite.html")
+
 
 # @app.route('/colorcode/')
 # def colorcode():
@@ -207,27 +216,55 @@ def riot():
 def mojang():
     return render_template("ForWebPage/mojang.html")
 
-#@app_starter.route('/joke', methods=['GET', 'POST'])
-#def joke():
-#    """
- #   # use this url to test on and make modification on you own machine
-  #  url = "http://127.0.0.1:5222/api/joke"
-   # """
-    #url = "https://csp.nighthawkcodingsociety.com/api/joke"
-    #response = requests.request("GET", url)
-    #return render_template("other/joke.html", joke=response.json())
+@app.route('/sport', methods=['GET', 'POST'])
+def sport():
+    url = "http://localhost:5000/api/sport"
+    response = requests.request("GET", url)
+    return render_template("layouts/sport.html", sport=response.json())
+
+@app.route('/game', methods=['GET', 'POST'])
+def game():
+    url = "http://localhost:5000/api/game"
+    response = requests.request("GET", url)
+    return render_template("layouts/game.html", game=response.json())
+
+@app.route('/sports/', methods=['GET', 'POST'])
+def sports():
+    url = "http://localhost:5000/api/sports"
+    response = requests.request("GET", url)
+    return render_template("layouts/sports.html", sports=response.json())
+
+app.register_blueprint(api_bp)
+
+@app.route('/games/', methods=['GET', 'POST'])
+def games():
+    url = "http://localhost:5000/api/games"
+    response = requests.request("GET", url)
+    return render_template("layouts/games.html", games=response.json())
+
+app.register_blueprint(api_bp)
+
+@app.route('/joke', methods=['GET', 'POST'])
+def joke():
+    """
+    # use this url to test on and make modification on you own machine
+    url = "http://127.0.0.1:5222/api/joke"
+    """
+    url = "https://csp.nighthawkcodingsociety.com/api/joke"
+    response = requests.request("GET", url)
+    return render_template("layouts/joke.html", joke=response.json())
 
 
-#@app_starter.route('/jokes', methods=['GET', 'POST'])
-#def jokes():
- #   """
-  #  # use this url to test on and make modification on you own machine
-   # url = "http://127.0.0.1:5222/api/jokes"
-    #"""
-    #url = "https://csp.nighthawkcodingsociety.com/api/jokes"
+@app.route('/jokes', methods=['GET', 'POST'])
+def jokes():
+    """
+    # use this url to test on and make modification on you own machine
+    url = "http://127.0.0.1:5222/api/jokes"
+    """
+    url = "https://csp.nighthawkcodingsociety.com/api/jokes"
 
-    #response = requests.request("GET", url)
-    #return render_template("Other/jokes.html", jokes=response.json())
+    response = requests.request("GET", url)
+    return render_template("layouts/jokes.html", jokes=response.json())
 
 if __name__ == "__main__":
     app.run(debug=True)
