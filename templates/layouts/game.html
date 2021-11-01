@@ -6,8 +6,8 @@
 
         <div class="center-block" style="margin: 2% 5% 5%; font-family: gilroy,serif;">
             <div class="col-12" style="text-align: center;">
-                <h1><strong>Random Joke</strong></h1>
-                <form action={{url_for('joke')}}>
+                <h1><strong>Random Game</strong></h1>
+                <form action={{url_for('game')}}>
                     <button>Refresh!</button>
                 </form>
             </div>
@@ -16,7 +16,7 @@
             <!-- Input and Content -->
             <div class="jumbotron text-left row">
                 <div class="col-md">
-                    <p class="setup" style="color:black"><strong>{{joke.joke}}</strong></p>
+                    <img width="600" height="400" src="{{game.game}}"/>
                 </div>
             </div>
 
@@ -26,7 +26,7 @@
                 <th>JSON Data</th>
             </tr>
             <tr>
-                <td style="color:black">{{joke}}</td>
+                <td>{{game}}</td>
             </tr>
         </table>
 

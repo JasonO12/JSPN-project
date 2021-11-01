@@ -3,20 +3,16 @@
 
 {% block body %}
     <div class="container">
-
         <div class="center-block" style="margin: 2% 5% 5%; font-family: gilroy,serif;">
             <div class="col-12" style="text-align: center;">
-                <h1><strong>Random Joke</strong></h1>
-                <form action={{url_for('joke')}}>
-                    <button>Refresh!</button>
-                </form>
+                <h1><strong>All Games</strong></h1>
             </div>
 
-
-            <!-- Input and Content -->
             <div class="jumbotron text-left row">
                 <div class="col-md">
-                    <p class="setup" style="color:black"><strong>{{joke.joke}}</strong></p>
+                    {% for game in games %}
+                        <p style="color: black;" class="setup"><strong>{{game.id}}. {{game.game}}</strong></p>
+                    {% endfor %}
                 </div>
             </div>
 
@@ -26,9 +22,8 @@
                 <th>JSON Data</th>
             </tr>
             <tr>
-                <td style="color:black">{{joke}}</td>
+                <td>{{games}}</td>
             </tr>
         </table>
-
     </div>
 {% endblock %}

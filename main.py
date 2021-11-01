@@ -3,9 +3,10 @@ from flask import Flask, render_template, request
 from algorithm.image import image_data
 from pathlib import Path
 import math
-import requests
+import wikipedia, requests
 from PIL import Image, ImageDraw, ImageFont
 from ctypes import *
+from templates.api.sportsapi import api_bp
 
 
 # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
@@ -153,7 +154,7 @@ def valorant():
     return render_template("ForWebPage/valorant.html")
 
 @app.route('/fortnite')
-def fortnite():
+def fornite():
     return render_template("ForWebPage/fortnite.html")
 
 
@@ -233,11 +234,15 @@ def sports():
     response = requests.request("GET", url)
     return render_template("layouts/sports.html", sports=response.json())
 
+app.register_blueprint(api_bp)
+
 @app.route('/games/', methods=['GET', 'POST'])
 def games():
     url = "http://localhost:5000/api/games"
     response = requests.request("GET", url)
     return render_template("layouts/games.html", games=response.json())
+
+app.register_blueprint(api_bp)
 
 @app.route('/joke', methods=['GET', 'POST'])
 def joke():
