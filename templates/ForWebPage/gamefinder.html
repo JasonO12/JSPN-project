@@ -4,6 +4,9 @@
 <title>WebPage</title>
 {% block body %}
     <head>
+        <link
+                href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        />
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
         <script>
             function gamepicks()
@@ -59,7 +62,12 @@
         * {
             box-sizing: border-box;
         }
-
+        .search {
+            position: absolute;
+        }
+        .container {
+            position: absolute;
+        }
         /* Create two equal columns that floats next to each other */
         .column2 {
             float: left;
@@ -174,7 +182,7 @@
             font-size: x-large;
         }
         .space {
-            line-height: 315px;
+            line-height: 80px;
             text-align: center;
         }
         .answer{
@@ -195,7 +203,7 @@
             font-size: xx-large;
             font-style: oblique;
             color: white;
-            line-height: 50px;
+            line-height: 5px;
         }
         .heading{
             font-size: xx-large;
@@ -278,6 +286,46 @@
             </table>
         </div>
     </div>
+    <form class="search" action="">
+        <label for="" style="color: white">Found a game? Get news on it!</label>
+        <input class="input" type="text">
+        <input type="submit">
+    </form>
+
+    <div class="container">
+        <ul class="news-list"></ul>
+    </div>
+
+    <script>
+        const searchFrom = document.querySelector('.search');
+        const input = document.querySelector('.input');
+        const newsList = document.querySelector('.news-list');
+
+        searchFrom.addEventListener('submit', retrieve)
+
+        function retrieve(e){
+            e.preventDefault()
+
+            const apiKey = 'a961ccbc9a8d47a0974302b9596eeccb'
+            let topic = input.value;
+            let url = 'https://newsapi.org/v2/everything?q=' + topic + '&apiKey=' + apiKey;
+            fetch(url).then((res)=>{
+                return res.json()
+            }).then((data)=>{
+                console.log(data)
+                data.articles.forEach(article =>{
+                    let li = document.createElement('li');
+                    let a = document.createElement('a');
+                    a.setAttribute('href', article.url)
+                    a.setAttribute('target', '_blank')
+                    a.textContent = article.title;
+                    li.appendChild(a);
+                    newsList.appendChild(li);
+                })
+            })
+            console.log(topic)
+        }
+    </script>
     </body>
 {% endblock %}
 
