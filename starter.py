@@ -6,9 +6,11 @@ starter_bp = Blueprint('starter', __name__,
                        template_folder='templates',
                        static_folder='static',
                        static_url_path='assets')
+
 import requests
 from flask import Blueprint, render_template
 from algorithm.image import image_data
+
 
 from pathlib import \
     Path  # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
@@ -36,7 +38,7 @@ def joke():
     """
     url = "https://csp.nighthawkcodingsociety.com/api/joke"
     response = requests.request("GET", url)
-    return render_template("other/joke.html", joke=response.json())
+    return render_template("layouts/joke.html", joke=response.json())
 
 
 @app_starter.route('/jokes', methods=['GET', 'POST'])
@@ -48,4 +50,4 @@ def jokes():
     url = "https://csp.nighthawkcodingsociety.com/api/jokes"
 
     response = requests.request("GET", url)
-    return render_template("Other/jokes.html", jokes=response.json())
+    return render_template("layouts/jokes.html", jokes=response.json())

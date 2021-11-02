@@ -3,10 +3,10 @@ from flask import Flask, render_template, request
 from algorithm.image import image_data
 from pathlib import Path
 import math
-import wikipedia, requests
 from PIL import Image, ImageDraw, ImageFont
 from ctypes import *
 from templates.api.gameapi import api_bp
+
 
 
 # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
