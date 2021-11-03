@@ -3,9 +3,13 @@ from flask import Flask, render_template, request
 from algorithm.image import image_data
 from pathlib import Path
 import math
-import wikipedia, requests
+import requests
 from PIL import Image, ImageDraw, ImageFont
 from ctypes import *
+import random
+
+from flask import Blueprint, jsonify
+from starter import app_starter
 from templates.api.gameapi import api_bp
 
 
@@ -19,6 +23,21 @@ app = Flask(__name__)
 def index():
     return render_template("Other/index.html")
 
+@app.route('/results', methods=['GET', 'POST'])
+def results():
+
+    url = "https://fortnite1.p.rapidapi.com/upcoming/get"
+
+    headers = {
+        'authorization': "string",
+        'x-rapidapi-host': "fortnite1.p.rapidapi.com",
+        'x-rapidapi-key': "3da3c3d39fmshe9fd9f48004368ep1692cajsnb0e1bb1b8414"
+    }
+
+    response = requests.request("GET", url, headers=headers)
+
+    print(response.text)
+    return render_template("ForWebPage/fortnite.html", stats=response.json())
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/kangaroos/')
