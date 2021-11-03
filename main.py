@@ -3,14 +3,14 @@ from flask import Flask, render_template, request
 from algorithm.image import image_data
 from pathlib import Path
 import math
-import wikipedia, requests
+import requests
 from PIL import Image, ImageDraw, ImageFont
 from ctypes import *
-from templates.api.sportsapi import api_bp
-
 
 # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
 # create a Flask instance
+from starter import app_starter
+
 app = Flask(__name__)
 
 
@@ -96,7 +96,28 @@ def horror():
 
 @app.route('/gamefinder/')
 def gamefinder():
-    return render_template("ForWebPage/gamefinder.html")
+
+    return render_template("ForWebPage/gamefinder.html", game='')
+
+@app_starter.route('/results', methods=['GET', 'POST'])
+def results():
+    defaultgame = [{"title":"test","short_description":"test description"}]
+    if request.form:
+
+        url = "https://free-to-play-games-database.p.rapidapi.com/api/game"
+
+        querystring = {"id":"452"}
+
+        headers = {
+            'x-rapidapi-host': "free-to-play-games-database.p.rapidapi.com",
+            'x-rapidapi-key': "3da3c3d39fmshe9fd9f48004368ep1692cajsnb0e1bb1b8414"
+        }
+
+        response = requests.request("GET", url, headers=headers, params=querystring)
+
+        print(response.text)
+
+    return render_template("ForWebPage/fortnite.html", games=defaultgame.json())
 
 @app.route('/platforms/')
 def platforms():
@@ -228,13 +249,13 @@ def game():
     response = requests.request("GET", url)
     return render_template("layouts/game.html", game=response.json())
 
-@app.route('/sports/', methods=['GET', 'POST'])
-def sports():
-    url = "http://localhost:5000/api/sports"
-    response = requests.request("GET", url)
-    return render_template("layouts/sports.html", sports=response.json())
-
-app.register_blueprint(api_bp)
+# @app.route('/sports/', methods=['GET', 'POST'])
+# def sports():
+#     url = "http://localhost:5000/api/sports"
+#     response = requests.request("GET", url)
+#     return render_template("layouts/sports.html", sports=response.json())
+#
+# app.register_blueprint(api_bp)
 
 @app.route('/games/', methods=['GET', 'POST'])
 def games():
@@ -242,7 +263,7 @@ def games():
     response = requests.request("GET", url)
     return render_template("layouts/games.html", games=response.json())
 
-app.register_blueprint(api_bp)
+# app.register_blueprint(api_bp)
 
 @app.route('/joke', methods=['GET', 'POST'])
 def joke():

@@ -2,12 +2,11 @@
 <html lang="en">
 <meta charset="UTF-8">
 <title>WebPage</title>
-{% block body %}
     <head>
         <link
-                href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+{#                href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"#}
         />
-        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
+{#        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">#}
         <script>
             function gamepicks()
             {
@@ -55,8 +54,8 @@
 
             }
         </script>
-    </head>
-    <body>
+
+
     <style>
         .output {
             padding-top: 20px;
@@ -299,6 +298,9 @@
         }
 
     </style>
+    </head>
+<body>
+{% block body %}
 
     <div class="row">
         <div>
@@ -363,8 +365,15 @@
                 </tr>
             </table>
         </div>
-    </div>
-    <form class="search" action="">
+{#        <div class="col-12">#}
+{#            <form action="/results/" method="POST" >#}
+{#                <label style="color:white">Get game data</label>#}
+{#                <input type="submit" value="Get data">#}
+{#            </form>#}
+{#        </div>#}
+     </div>
+
+    <form action="/gamefinder/" class="search">
         <label for="" style="color: white; font-size: xx-large">Found a game? Get news on it!</label>
         <input class="input" type="text">
         <button class="ssbutton" type="submit">SEARCH!</button>
