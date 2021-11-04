@@ -4,6 +4,8 @@ JSPN Project P5
 ## Table Of Contents
 
   - [Project Credits](https://github.com/JasonO12/JSPN-project#jspn-project-credits)
+  - [Ideation](https://github.com/JasonO12/JSPN-project#ideation)
+  - [Draft Final](https://github.com/JasonO12/JSPN-project#draft-final)
   - [Week 9](https://github.com/JasonO12/JSPN-project#week-9)
   - [Week 8](https://github.com/JasonO12/JSPN-project#week-8)
   - [Week 7](https://github.com/JasonO12/JSPN-project#week-7)
@@ -12,7 +14,6 @@ JSPN Project P5
   - [Week 4](https://github.com/JasonO12/JSPN-project#week-4)
   - [Week 3](https://github.com/JasonO12/JSPN-project#week-3)
   - [Week 2](https://github.com/JasonO12/JSPN-project#week-2)
-  - [Ideation](https://github.com/JasonO12/JSPN-project#ideation)
 
 
 ## JSPN Project Credits
@@ -28,6 +29,14 @@ JSPN Project P5
 | Nicolas Mounier    | [@nicm2](https://github.com/nicm2)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)      | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)     | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=nicm2)   | [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing)      |
 | Paul DiPasquale       | [@Paul-D6](https://github.com/Paul-D6)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)      | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=Paul-D6)    | [Jason and Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing)      |
 | Somaditya Singh        | [@somaditya1](https://github.com/somaditya1)| [Tasks](https://github.com/JasonO12/flask_portfolio/issues)    | [Scrum Board](https://github.com/JasonO12/flask_portfolio/projects/1)    | [Commits](https://github.com/JasonO12/flask_portfolio/commits/main?author=somaditya1)    | [Nic and Soma Journal](https://docs.google.com/document/d/1CS6WWy5mbM1ZfJFXi96CRyAAK6Lgmsj6MTW1nJFO6WI/edit?usp=sharing)     |
+
+#### Ideation
+Our idea is to create a website about popular video games, providing diverse information. This will include ratings, most popular games, genre of games, companies that make games, and more. We will include login systems, navbar dropdowns, and unique CSS to make our website unique and easy to navigate. We will also have many extra features in our website including random username generator, mini-quizzes, guessing games, APIs, and more.
+
+
+## Draft Final
+
+#### [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdI1YqZtSEa6XQfstoePE59xu_kqiJD9ppDQzG6pysPidGCZQ/viewform?usp=sf_link)
 
 ## Week 9
 
@@ -45,10 +54,10 @@ Time Box
 
 | Name | Requirment | Evidence | Grade |
 | --- | ---        | ---      | --- |
-| Jason | Help develop various parts of the website, adding buttons, etc. Add place for video journals. | [Ticket](https://github.com/JasonO12/JSPN-project/commit/7f304fd0151fbc158f191e9bb8bea2b91fb9a275) for navbar update. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons.  | |
-| Nic | Add buttons and change DOM of code. Incorporate a sample rating page for a game. |[Ticket](https://github.com/JasonO12/JSPN-project/commit/8d8b90449a1d2856af563346942abddb75247535) for horror games section implemented, sample rating page here. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. |  |
-| Paul | Help make the website reflect original wireframes. Use tables, images, etc. | [Ticket](https://github.com/JasonO12/JSPN-project/commit/734e08c45999425bf24059b6afab43d328f08166) for updating of webpage interface, new html files for games. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. | |
-| Soma | Help develop various parts of the website, adding buttons, etc. | [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. | |
+| Jason | Help develop various parts of the website, adding buttons, etc. Add place for video journals. | [Ticket](https://github.com/JasonO12/JSPN-project/commit/7f304fd0151fbc158f191e9bb8bea2b91fb9a275) for navbar update. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons.  | 7.5/8|
+| Nic | Add buttons and change DOM of code. Incorporate a sample rating page for a game. |[Ticket](https://github.com/JasonO12/JSPN-project/commit/8d8b90449a1d2856af563346942abddb75247535) for horror games section implemented, sample rating page here. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. |  7.5/8|
+| Paul | Help make the website reflect original wireframes. Use tables, images, etc. | [Ticket](https://github.com/JasonO12/JSPN-project/commit/734e08c45999425bf24059b6afab43d328f08166) for updating of webpage interface, new html files for games. [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. |7.5/8 |
+| Soma | Help develop various parts of the website, adding buttons, etc. | [Issue](https://github.com/JasonO12/JSPN-project/issues/46) to completed preview of functioning buttons. | 7.5/8|
 
 #### Week 8 Presentation [Review Ticket](https://github.com/JasonO12/JSPN-project/issues/42)
 #### [Jason/Paul Journal](https://docs.google.com/document/d/1IevKRy1XfF1CWY7HopKQdVbYLyopoEJTRfLc1Tp3FKA/edit?usp=sharing) for 3.7 and 3.8 notes/quizzes
@@ -168,8 +177,5 @@ Developers. Integration of Video Journal 0 into a mini-lab page | [Video Journal
 | Nic |7/7| ![image](https://cdn.discordapp.com/attachments/750552701686775968/891784407097171978/unknown.png)|Personal laptop at home and school|
 
 ### [Video Journal 0](https://www.youtube.com/watch?v=Lz1NFP2E134)
-
-#### Ideation
-Our idea is to create a website about popular video games, providing diverse information. This will include ratings, most popular games, genre of games, graphics cards required, and more. We will include login systems, navbar dropdowns, and unique CSS to make our website unique and easy to navigate. 
 
 
