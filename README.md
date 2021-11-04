@@ -36,6 +36,8 @@ Our idea is to create a website about popular video games, providing diverse inf
 
 ## Draft Final
 
+#### [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdI1YqZtSEa6XQfstoePE59xu_kqiJD9ppDQzG6pysPidGCZQ/viewform?usp=sf_link)
+
 ## Week 9
 
 Time Box
