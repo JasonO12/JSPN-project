@@ -23,29 +23,26 @@
 
         function companypicks() {
             const companylist = ["Mojang", "Epic Games", "Riot Games", "Behaviour Interactive", "Blizzard Entertainment", "Rockstar Games"];
-            const dropdownPick = document.getElementById("input2").value;
+            const dropdownPick = parseInt(document.getElementById("input2").value);
 
-
-            if (dropdownPick === "0") {
-                document.getElementById("conclusion").innerHTML = companylist[0];
-            } else if (dropdownPick === "1") {
-                document.getElementById("conclusion").innerHTML = companylist[1];
-            } else if (dropdownPick === "2") {
-                document.getElementById("conclusion").innerHTML = companylist[2];
-            } else if (dropdownPick === "3") {
-                document.getElementById("conclusion").innerHTML = companylist[3];
-            } else if (dropdownPick === "4") {
-                document.getElementById("conclusion").innerHTML = companylist[4];
-            } else if (dropdownPick === "5") {
-                document.getElementById("conclusion").innerHTML = companylist[5];
-            }
-
+            document.getElementById("conclusion").innerHTML = companylist[dropdownPick];
         }
 
-        {#for (let i = 0; i < 6; i++) {#}
-        {#    document.getElementById("conclusion").innerHTML = companylist[i];#}
+        {#    if (dropdownPick === "0") {#}
+        {#        document.getElementById("conclusion").innerHTML = companylist[0];#}
+        {#    } else if (dropdownPick === "1") {#}
+        {#        document.getElementById("conclusion").innerHTML = companylist[1];#}
+        {#    } else if (dropdownPick === "2") {#}
+        {#        document.getElementById("conclusion").innerHTML = companylist[2];#}
+        {#    } else if (dropdownPick === "3") {#}
+        {#        document.getElementById("conclusion").innerHTML = companylist[3];#}
+        {#    } else if (dropdownPick === "4") {#}
+        {#        document.getElementById("conclusion").innerHTML = companylist[4];#}
+        {#    } else if (dropdownPick === "5") {#}
+        {#        document.getElementById("conclusion").innerHTML = companylist[5];#}
+        {#    }#}
+        {##}
         {#}#}
-
 
 
         function quizpicks() {
