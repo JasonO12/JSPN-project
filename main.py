@@ -271,5 +271,24 @@ def jokes():
     response = requests.request("GET", url)
     return render_template("layouts/jokes.html", jokes=response.json())
 
+# @app.route('/conclusions', methods=['GET', 'POST'])
+# def conclusions():
+#
+#     url = "https://minecraftstefan-skliarovv1.p.rapidapi.com/getPCServerMOTD"
+#
+#     payload = "address=dncraft.my.pebble.host"
+#     headers = {
+#         'content-type': "application/x-www-form-urlencoded",
+#         'x-rapidapi-host': "Minecraftstefan-skliarovV1.p.rapidapi.com",
+#         'x-rapidapi-key': "c0b1037797mshd26862caa98bfa8p1aad35jsna31ea3561455"
+#     }
+#
+#     response = requests.request("POST", url, data=payload, headers=headers)
+#
+#     print(response.text)
+#
+#     return render_template("ForWebPage/minecraft.html", stats=response.json())
+
+
 if __name__ == "__main__":
     app.run(debug=True)

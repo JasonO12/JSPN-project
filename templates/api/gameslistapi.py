@@ -5,8 +5,8 @@ api_bp = Blueprint('api', __name__,
                    template_folder='templates',
                    static_folder='static', static_url_path='static/api')
 
-games = []
-game_list = [
+info = []
+info_list = [
     ["Minecraft", ["PC", "Playstation", "XBox", "Nintendo Switch", "Mobile"], "Mojang", "2011"],
     ["Fortnite", ["PC", "Playstation", "XBox", "Nintendo Switch", "Mobile"], "Epic games", "2017"],
     ["Valorant", ["PC"], "Riot Games", "2020"],
@@ -15,15 +15,17 @@ game_list = [
     ["Grand Theft Auto V", ["PC", "Playstation", "XBox"], "Rockstar Games", "2013"]
 ]
 
+
+
 def _find_next_id():
-    return max(games["id"] for game in game_list) + 1
+    return max(info["id"] for inf in info_list) + 1
 
 
-def _init_games():
+def _init_info():
     id = 1
     # Creating the questions list which will store all the data to be converted to json
-    for game in game_list:
-        games.append({"id": id, })
+    for inf in info_list:
+        info.append({"id": id, })
         id += 1
 
 
@@ -36,5 +38,5 @@ def get_games():
 
 
 if __name__ == "__main__":
-    get_games()
-    print(games)
+    for item in info_list:
+        print(item[0], print(item[1]))

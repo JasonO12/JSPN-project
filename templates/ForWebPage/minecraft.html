@@ -218,7 +218,25 @@
         </form>
         <button onclick="checknum()" accesskey="enter" class="cta">Check!</button> <p id="display"> </p>
     </div>
-
+        <div class="col-12">
+            <form action={{url_for('conclusions')}}>
+                <label style="color:white">Get game data</label>
+                <button>Get Data</button>
+            </form>
+        </div>
+        <!-- Sequence -->
+        <div class="col-12" style="text-align: left; ">
+            <table style="margin: 2%">
+                <tr>
+                    <th>Data</th>
+                </tr>
+                {% for stat in stats.data %}
+                    <td>
+                        {{stat.item.name}}
+                    </td>
+                {% endfor %}
+            </table>
+        </div>
     </body>
 {% endblock %}
 <!- This is turning off birds background from base.html -->
